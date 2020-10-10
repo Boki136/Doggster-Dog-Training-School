@@ -1,43 +1,45 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+![logo](assets/images/logo.png) 
+# DOGGSTER
 
-Welcome USER_NAME,
+Welcome to Doggster! We are excited to be guding you and your best friend in forming a special bond 
+nutured with the love and respect. 
+Every pooch is a part of our evergrowing family and we always give 100% commitment to their training and excersise.
+Our main focus is to understand your dog before we start with any type of the training and we belive every dog can learn
+to behave in a good way and listen to their owners.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
 
-## Gitpod Reminders
+## UX
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The perfect client for this business is a person who owns a dog and it's looking for the training services.
+The age & size of the dog is not important which allows broader scope of potential clients. 
+Copy on the website is friendly focused which could indicate to clients that their dog will have fun and be
+in a lovely enviroment while training.
 
-`python3 -m http.server`
+#### <ins>Use cases:</ins>
 
-A blue button should appear to click: *Make Public*,
+ - puppy owners: People who are looking to start training their pups from the early stages of their life.
+ - adult dog owners: People who have any sort of problem/difficulties with their dogs(aggression, behaviour issues)
+ - People who are looking for a daycare to leave their dog while they're in work.
+ - People that wish to teach their dog a litte bit extra(tricks, listening to orders etc.
+ 
 
-Another blue button should appear to click: *Open Browser*.
+Please check UX folder for wireframes, colour pallet & fonts and a Site map.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: *Make Public*,
+## Features 
 
-Another blue button should appear to click: *Open Browser*.
+Website will be consisted of five pages:
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+- Homepage 
+- About Us 
+- Contact Us
+- Services
 
-## Updates Since The Instructional Video
+**Homepage** will have two calls to action - "Make a reservation"(this is useful for returnig clients who already used our services and want to make a quick booking ) 
+"Learn More" to prompt potential new clients to explore more about who we are and what the bussines is about. Users can also explore the service
+offering. The rest of the page is content oriented without any actions users can take. This page is also very rich with the images with purpose
+of grabbing users attention.
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+**About Us**
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!

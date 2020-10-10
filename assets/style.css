@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+/*--------------------CSS RESET-------------------*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.wrapper {
+  background: url("../assets/images/hero-img.png") no-repeat left top;
+  background-size: cover;
+  height: 1100px;
+}
+
+/*--------------------NAVBAR-------------------*/
+
+.navbar {
+  height: 100px;
+  padding: 0 16;
+  width: 100%;
+}
+
+.navbar-brand img {
+  max-width: 100%;
+  max-height: 150px;
+}
+
+.nav-link {
+  color: #000 !important;
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.38s ease-in-out 0.05s;
+}
+
+.nav-link:hover::before {
+  color: #000;
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.nav-item {
+  padding-left: 10px;
+}
+
+.hide--item--col--lg {
+  display: none;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #b36b39;
+}
+/*--------------------HEADER SECTION-------------------*/
+
+.header--part--one {
+  margin-top: 200px;
+  position: relative;
+}
+
+.header--title {
+  font-weight: 700;
+  font-size: 35px;
+  padding-bottom: 25px;
+}
+
+.header--intro {
+  padding-bottom: 25px;
+  font-size: 20px;
+}
+
+
+/*------------------SERVICE SECTION----------------------*/
+
+
+.service--wrapper {
+    width: 70%;
+    margin: 0 auto;
+    height: 450px;
+    position: relative;
+    top: 100px;
+}
+
+
+.service--box--one,.service--box--two {
+    background: red;
+    height: 200px;
+}
+
+
+
+
+
+
+/*--------------------BUTTONS-------------------*/
+
+.button--primary {
+  background-color: #b36b39;
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 30px;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  opacity: 0.9;
+}
+
+.button--primary:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.button--secondary {
+  background-color: #807f3c;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  opacity: 0.9;
+  padding: 8px 30px;
+}
+
+.button--secondary:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+/*--------------------MEDIA QUERY-------------------*/
+
+@media only screen and (max-width: 575px) {
+  .form-inline {
+    display: inline-block !important;
+  }
+
+  .header--part--one .button--secondary {
+    display: none;
+  }
+
+  .wrapper {
+    background-image: none !important;
+  }
+
+  .navbar {
+    background-color: #96abb0;
+    border-bottom: 3px white solid;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  .navbar-brand {
+    padding-bottom: 0;
+  }
+
+  .navbar-brand img {
+    height: 90px;
+  }
+
+  .navbar-collapse.collapse.show {
+    background-color: #96abb0;
+    height: 45vh;
+    text-align: center;
+    padding: 60px;
+  }
+
+  .hide--item--col--lg {
+    display: block;
+  }
+
+  .nav-item.dropdown {
+    display: none;
+  }
+
+  .header--part--one {
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 695px) {
+  .form-inline {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 696px) {
+  .header--part--one .button--secondary {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-link:hover::before {
+    color: #000;
+    visibility: hidden;
+    transform: scaleX(1);
+  }
+
+  .wrapper {
+    background: url("../assets/images/hero-img.png") no-repeat;
+    background-position: top;
+  }
+
+  .header--part--one.offset-1 {
+    margin-left: 0;
+  }
+
+  .navbar {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-brand {
+    margin-left: 16px;
+  }
+
+  .navbar-toggler {
+    margin-right: 16px;
+  }
+
+  .header--part--one .btn {
+    margin-top: 25px;
+  }
+}
+
