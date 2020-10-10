@@ -218,41 +218,44 @@ h6 {
   font-size: 20px;
 }
 
-
 /*------------------SERVICE SECTION----------------------*/
 
-
 .service--wrapper {
-    width: 70%;
-    margin: 0 auto;
-    height: 450px;
-    position: relative;
-    top: 100px;
+  width: 70%;
+  margin: 0 auto;
+  height: 450px;
+  position: relative;
+  top: 100px;
 }
 
-
-.service--box--one,.service--box--two {
-    height: 200px;
-    text-align: center;
+.service--box--one,
+.service--box--two {
+  height: 200px;
+  text-align: center;
+  border: 1px solid #96abb0;
 }
 
-.service--box--one h3,.service--box--two h3 {
+.service--box--one img,
+.service--box--two img {
+  padding-top: 20px;
+  display: block;
+  margin: 0 auto;
+}
 
-    padding: 20px 15px 15px 15px;
-    font-weight: 700;
-
-   
-
+.service--box--one a,
+.service--box--two a {
+  padding-top: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
 }
 
 .right-arrow--icon {
-    font-size: 40px;
-    vertical-align: middle;
-  
+  font-size: 40px;
+  vertical-align: sub;
+  padding-left: 10px;
 }
-
-
-
 
 /*--------------------BUTTONS-------------------*/
 
@@ -363,6 +366,7 @@ h6 {
   .wrapper {
     background: url("../assets/images/hero-img.png") no-repeat;
     background-position: top;
+    height: 700px;
   }
 
   .header--part--one.offset-1 {
@@ -387,3 +391,8 @@ h6 {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .service--box--one {
+    margin-bottom: 30px;
+  }
+}
