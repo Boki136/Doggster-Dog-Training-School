@@ -232,11 +232,24 @@ h6 {
 
 
 .service--box--one,.service--box--two {
-    background: red;
     height: 200px;
+    text-align: center;
 }
 
+.service--box--one h3,.service--box--two h3 {
 
+    padding: 20px 15px 15px 15px;
+    font-weight: 700;
+
+   
+
+}
+
+.right-arrow--icon {
+    font-size: 40px;
+    vertical-align: middle;
+  
+}
 
 
 
