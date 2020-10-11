@@ -143,7 +143,7 @@ h6 {
 }
 
 .wrapper {
-  background: url("../assets/images/hero-img.png") no-repeat left top;
+  background: url("../assets/images/hero-background-image.png") no-repeat center center;
   background-size: cover;
   height: 1100px;
 }
@@ -154,6 +154,8 @@ h6 {
   height: 100px;
   padding: 0 16;
   width: 100%;
+  background: #96ABB0;
+
 }
 
 .navbar-brand img {
@@ -162,7 +164,7 @@ h6 {
 }
 
 .nav-link {
-  color: #000 !important;
+  color: #fff !important;
   position: relative;
 }
 
@@ -173,20 +175,20 @@ h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #fff;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.38s ease-in-out 0.05s;
 }
 
 .nav-link:hover::before {
-  color: #000;
+  color: #fff;
   visibility: visible;
   transform: scaleX(1);
 }
 
 .nav-link:hover {
-  color: #000;
+  color: #fff;
 }
 
 .nav-item {
@@ -203,13 +205,13 @@ h6 {
 /*--------------------HEADER SECTION-------------------*/
 
 .header--part--one {
-  margin-top: 200px;
+  margin-top: 135px;
   position: relative;
 }
 
 .header--title {
   font-weight: 700;
-  font-size: 35px;
+  font-size: 2.5em;
   padding-bottom: 25px;
 }
 
@@ -218,6 +220,9 @@ h6 {
   font-size: 20px;
 }
 
+.header--part--two:nth-child(2) {
+     display: none;
+  }
 /*------------------SERVICE SECTION----------------------*/
 
 .service--wrapper {
@@ -304,10 +309,6 @@ h6 {
     display: none;
   }
 
-  .wrapper {
-    background-image: none !important;
-  }
-
   .navbar {
     background-color: #96abb0;
     border-bottom: 3px white solid;
@@ -326,9 +327,13 @@ h6 {
 
   .navbar-collapse.collapse.show {
     background-color: #96abb0;
-    height: 45vh;
+    height: 100vh;
     text-align: center;
-    padding: 60px;
+    padding: 120px 20px 0 20px;
+  }
+
+  .nav-link:hover {
+      color: #fff;
   }
 
   .hide--item--col--lg {
@@ -341,12 +346,37 @@ h6 {
 
   .header--part--one {
     margin-top: 60px;
+    text-align: center;
   }
+
+  .header--title {
+      font-size: 1.5em;
+  }
+
+  .header--intro {
+      font-size: 1em;
+  }
+
+  .header--part--two:nth-child(1) {
+      display: none;
+    
+  }
+
+  .header--part--two:nth-child(2) {
+     display: block;
+  }
+
+
 }
 
 @media only screen and (max-width: 695px) {
   .form-inline {
     display: none;
+  }
+
+  .header--part--two img {
+      position: relative;
+      top: 50px;
   }
 }
 
@@ -363,11 +393,6 @@ h6 {
     transform: scaleX(1);
   }
 
-  .wrapper {
-    background: url("../assets/images/hero-img.png") no-repeat;
-    background-position: top;
-    height: 700px;
-  }
 
   .header--part--one.offset-1 {
     margin-left: 0;
