@@ -278,11 +278,11 @@ h6 {
 }
 
 .facts-wrapper img {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
 }
 
-.facts-first--row {
+.facts-first--row,.facts-second--row { 
     margin-top: 65px;
 }
 
@@ -290,6 +290,20 @@ h6 {
     width: 80%;
     padding-top: 15px;
 }
+
+.fa-heart {
+    color: #cd2e26;
+}
+
+.fa-ruler-vertical {
+    color: #bf6e2c;
+}
+
+.fa-question-circle {
+    color: #a6a552;
+}
+
+
 
 /*--------------------HORIZONTAL RULE-------------------*/
 
@@ -430,6 +444,10 @@ h6 {
   .header--intro {
     font-size: 1.25em !important;
   }
+
+  .facts-second--row {
+      margin-top: 15px;
+  }
 }
 
 @media only screen and (max-width: 695px) {
@@ -439,6 +457,10 @@ h6 {
 
   .button--primary {
     margin-right: 30px;
+  }
+
+  .facts-wrapper {
+      text-align: -webkit-center;
   }
 }
 
