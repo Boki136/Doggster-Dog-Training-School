@@ -198,7 +198,7 @@ h6 {
 }
 
 .social-icons--mobile {
-    display: none;
+  display: none;
 }
 /*--------------------HEADER SECTION-------------------*/
 
@@ -263,59 +263,101 @@ h6 {
 /*------------------FACTS SECTION---------------*/
 
 .facts-wrapper {
-    height: max-content;
-    margin-top: 100px;
+  height: max-content;
+  margin-top: 100px;
+  width: 90%;
+  margin: 100px auto;
 }
 
 .facts-wrapper h1 {
-    font-size: 2em;
-    text-align: center;
+  font-size: 2em;
+  text-align: center;
 }
 
 .facts-wrapper h2 {
-    padding-top: 10px;
-    font-size: 1.2em;
+  padding-top: 10px;
+  font-size: 1.2em;
 }
 
 .facts-wrapper img {
-    width: 48px;
-    height: 48px;
+  width: 48px;
+  height: 48px;
 }
 
-.facts-first--row,.facts-second--row { 
-    margin-top: 65px;
+.facts-first--row,
+.facts-second--row {
+  margin-top: 65px;
 }
 
 .facts-wrapper p {
-    width: 80%;
-    padding-top: 15px;
+  width: 80%;
+  padding-top: 15px;
 }
 
 .fa-heart {
-    color: #cd2e26;
+  color: #cd2e26;
 }
 
 .fa-ruler-vertical {
-    color: #bf6e2c;
+  color: #bf6e2c;
 }
 
 .fa-question-circle {
-    color: #a6a552;
+  color: #a6a552;
 }
 
+/*--------------------GALLERY SECTION-------------------*/
+
+.gallery-wrapper h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.gallery-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.gallery-wrapper.row {
+  margin-top: 50px;
+}
+
+/*----------------------NEWSLETTER SECTION---------------*/
+.newsletter-wrapper {
+  text-align: center;
+  height: 200px;
+  background-color: #96abb0;
+  padding: 5%;
+  margin-top: 100px;
+  color: #fff;
+}
+
+.newsletter-wrapper h1 {
+  font-size: 1.5em;
+  padding-bottom: 10px;
+}
+
+.newsletter-wrapper p {
+    padding-bottom: 15px;
+}
+
+.newsletter-wrapper input {
+    width: 50%;
+    height: 30px;
+}
+
+.newsletter-wrapper button  {
+    height: 30px;
+}
 
 
 /*--------------------HORIZONTAL RULE-------------------*/
 
-
 .horizontal-rule {
-    width: 10%;
-    height: 3px;
-    background: black;
+  width: 10%;
+  height: 3px;
+  background: black;
 }
-
-
-
 
 /*--------------------BUTTONS-------------------*/
 
@@ -358,29 +400,31 @@ h6 {
 /*--------------------MEDIA QUERY-------------------*/
 
 @media only screen and (max-width: 400px) {
-
-.service--wrapper .fa-4x {
+  .service--wrapper .fa-4x {
     font-size: 3em;
-}
+  }
 
-.service--wrapper img {
+  .service--wrapper img {
     height: 48px;
-}
+  }
 
-.service--wrapper i {
+  .service--wrapper i {
     font-size: 48px;
-}
+  }
 
-.header--part--two img {
+  .header--part--two img {
     max-width: 120%;
     left: 0;
     right: 25px;
-}
+  }
 
+  .gallery-wrapper img:nth-child(11),
+  .gallery-wrapper img:nth-child(10) {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 575px) {
-
   .form-inline {
     display: inline-block !important;
   }
@@ -411,26 +455,26 @@ h6 {
     padding: 120px 20px 0 20px;
   }
 
- .nav-link {
-     font-size: 150%;
- }
- 
+  .nav-link {
+    font-size: 150%;
+  }
+
   .nav-link:hover {
     color: #fff;
   }
 
-.social-icons--mobile {
-   display: block;
-}
+  .social-icons--mobile {
+    display: block;
+  }
 
   .social-icons--mobile i {
-      padding: 25px;
-      color: #fff;
-      margin: 0 auto;
+    padding: 25px;
+    color: #fff;
+    margin: 0 auto;
   }
 
   .social-icons--mobile i:hover {
-      color: #B36B39;
+    color: #b36b39;
   }
 
   .hide--item--col--lg {
@@ -442,7 +486,7 @@ h6 {
   }
 
   .button--secondary {
-      padding: 15px 30px;
+    padding: 15px 30px;
   }
 
   .header--part--one {
@@ -460,11 +504,11 @@ h6 {
   }
 
   .facts-second--row {
-      margin-top: 15px;
+    margin-top: 15px;
   }
 
   .padding-around {
-      padding: 20px;
+    padding: 20px;
   }
 }
 
@@ -478,7 +522,7 @@ h6 {
   }
 
   .facts-wrapper {
-      text-align: -webkit-center;
+    text-align: -webkit-center;
   }
 }
 
@@ -519,6 +563,11 @@ h6 {
   .header--part--one {
     text-align: center;
   }
+
+  .gallery-wrapper img {
+    width: 150px !important;
+    height: 300px !important;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -552,4 +601,9 @@ h6 {
   }
 }
 
-
+@media only screen and (max-width: 1350px) {
+  .gallery-wrapper img {
+    width: 250px;
+    height: 450px;
+  }
+}
