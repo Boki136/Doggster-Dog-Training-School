@@ -188,6 +188,22 @@ h6 {
   padding: 12px 20px;
 }
 
+/*--------------------HORIZONTAL RULE-------------------*/
+
+.horizontal-rule {
+  width: 10%;
+  height: 3px;
+  background: black;
+}
+
+.horizontal-rule--small {
+    width: 15%;
+    height: 2px;
+    background: #fff;
+    margin-left: 0
+}
+
+
 /*--------------------NAVBAR-------------------*/
 
 .navbar {
@@ -235,6 +251,15 @@ h6 {
   padding-left: 10px;
 }
 
+.dropdown-menu.show {
+    background: #46433e;
+ 
+}
+
+.dropdown-item {
+    color: #fff;
+}
+
 .hide--item--col--lg {
   display: none;
 }
@@ -246,6 +271,87 @@ h6 {
 .social-icons--mobile {
   display: none;
 }
+
+/*----------------------FOOTER SECTION---------------*/
+
+.footer-wrapper {
+  background: #46433e;
+  color: #fff;
+  padding: 60px 80px;
+}
+
+.footer-wrapper h2 {
+  font-size: 1.4em;
+  padding-bottom: 8px;
+}
+
+.footer-wrapper p {
+  font-size: 1.1em;
+
+}
+
+.footer-wrapper i {
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-wrapper a {
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.footer-wrapper a span {
+  padding-left: 8px;
+  font-size: 150%;
+}
+
+.bottom-space {
+    margin-bottom: 20px;
+}
+/*--------------------COPYRIGHT SECTION-------------------*/
+
+.copyright-bar {
+   
+    color: black;
+    height: 40px;
+    text-align: center;
+    background: #B36B39;
+
+}
+
+.copyright-bar p {
+    padding: 10px;
+    font-size: 100%;
+    color: #fff;
+}
+
+.icons-wrapper ul {
+    width: 100%;
+    text-align: right;
+    padding-top: 2%;
+}
+.icons-wrapper ul li {
+    display: inline-block;
+}
+
+.icons-wrapper i {
+    font-size: 1.5em;
+    padding-right: 15px;
+     transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+}
+
+.icons-wrapper i:hover {
+    color: #807f3c;
+}
+
+/*------------------------------------------HOMEPAGE STYLING START------------------------*/
+
+
 /*--------------------HEADER SECTION-------------------*/
 
 .header-wrapper {
@@ -409,97 +515,68 @@ h6 {
   height: 40px;
 }
 
-/*----------------------FOOTER SECTION---------------*/
+/*--------------------------------------HOMEPAGE STYLING END-----------------------------*/
 
-.footer-wrapper {
-  background: #46433e;
-  color: #fff;
-  padding: 60px 80px;
+
+
+/*--------------------------------------ABOUT US PAGE STYLING START-----------------------------*/
+
+.about-us-parallax i {
+    padding-bottom: 4%;
 }
 
-.footer-wrapper h2 {
-  font-size: 1.4em;
-  padding-bottom: 8px;
+.about-us-parallax h2 {
+    font-size: 125%;
 }
 
-.footer-wrapper p {
-  font-size: 1.1em;
-
+.parallax-one {
+    background: url("../assets/images/our-story-parallax.png") no-repeat fixed center;
+    background-size: cover;
+    height: 80vh;
 }
 
-.footer-wrapper i {
-  padding-right: 10px;
-  padding-bottom: 10px;
+.parallax-two {
+ background: url("../assets/images/our-mission-parallax.png") no-repeat fixed center;
+    background-size: cover;
+    height: 80vh;
 }
 
-.footer-wrapper a {
-  text-decoration: none;
-  color: #fff;
-  padding-bottom: 10px;
-  display: block;
+.parallax-three {
+ background: url("../assets/images/our-team-parallax.png") no-repeat fixed center;
+    background-size: cover;
+    height: 80vh;
 }
 
-.footer-wrapper a span {
-  padding-left: 8px;
-  font-size: 150%;
+
+.our-story--section {
+    text-align: center;
+    background: #46433E;
+    color: #fff;
+    padding: 100px 20%;
 }
 
-.bottom-space {
-    margin-bottom: 20px;
-}
-/*--------------------COPYRIGHT SECTION-------------------*/
-
-.copyright-bar {
-   
-    color: black;
-    height: 40px;
+.our-mission--section {
     text-align: center;
     background: #B36B39;
-
-}
-
-.copyright-bar p {
-    padding: 10px;
-    font-size: 100%;
     color: #fff;
+    padding: 100px 20%;
 }
 
-.icons-wrapper ul {
-    width: 100%;
-    text-align: right;
-    padding-top: 2%;
-}
-.icons-wrapper ul li {
-    display: inline-block;
+.our-team--section {
+  text-align: center;
+    background: #807F3C;
+    color: #fff;
+    padding: 100px 20%;
 }
 
-.icons-wrapper i {
-    font-size: 1.5em;
-    padding-right: 15px;
-     transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  -webkit-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
-}
 
-.icons-wrapper i:hover {
-    color: #807f3c;
-}
-/*--------------------HORIZONTAL RULE-------------------*/
 
-.horizontal-rule {
-  width: 10%;
-  height: 3px;
-  background: black;
-}
 
-.horizontal-rule--small {
-    width: 15%;
-    height: 2px;
-    background: #fff;
-    margin-left: 0
-}
 
+
+
+
+/*--------------------------------------ABOUT US PAGE STYLING END-----------------------------*/
 
 
 /*--------------------MEDIA QUERY-------------------*/
@@ -586,9 +663,21 @@ h6 {
     display: block;
   }
 
-  .nav-item.dropdown {
-    display: none;
-  }
+    .dropdown-menu.show {
+        text-align: center;
+        background: none;
+        border: none;
+    }
+
+    .dropdown-item {
+        color: #fff;
+        font-size: 110%;
+    }
+
+    .dropdown-item:hover {
+    background-color: transparent;
+    color: #fff;
+}
 
   .button--secondary {
     padding: 15px 30px;
@@ -638,7 +727,7 @@ h6 {
   }
 
   .horizontal-rule--small {
-      margin: 5px auto 25px auto
+      margin: 5px auto 25px auto;
     
   }
 
