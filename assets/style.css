@@ -207,7 +207,7 @@ h6 {
 /*--------------------NAVBAR-------------------*/
 
 .navbar {
-  height: 100px;
+  height: 120px;
   padding: 0 16;
   width: 100%;
   background: #96abb0;
@@ -522,17 +522,22 @@ h6 {
 /*--------------------------------------ABOUT US PAGE STYLING START-----------------------------*/
 
 .about-us-parallax i {
-    padding-bottom: 4%;
+    padding-bottom: 2%;
 }
 
 .about-us-parallax h2 {
-    font-size: 125%;
+    font-size: 200%;
 }
+
+.about-us-parallax p {
+    font-size: 125%;d
+} 
 
 .parallax-one {
     background: url("../assets/images/our-story-parallax.png") no-repeat fixed center;
     background-size: cover;
     height: 80vh;
+   
 }
 
 .parallax-two {
@@ -552,21 +557,22 @@ h6 {
     text-align: center;
     background: #46433E;
     color: #fff;
-    padding: 100px 20%;
+    padding: 150px 30%;
+    
 }
 
 .our-mission--section {
     text-align: center;
     background: #B36B39;
     color: #fff;
-    padding: 100px 20%;
+    padding: 150px 25%;
 }
 
 .our-team--section {
   text-align: center;
-    background: #807F3C;
+background: #807F3C;
     color: #fff;
-    padding: 100px 20%;
+    padding: 150px 25%;
 }
 
 
