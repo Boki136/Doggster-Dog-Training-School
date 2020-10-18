@@ -520,6 +520,9 @@ h6 {
 
 /*--------------------------------------ABOUT US PAGE STYLING START-----------------------------*/
 
+
+/*----------------------PARALLAX SECTIONS---------------*/
+
 .about-us-parallax i {
     padding-bottom: 2%;
 }
@@ -533,7 +536,7 @@ h6 {
 } 
 
 .parallax-one {
-    background: url("../assets/images/parallax-one-test.png") no-repeat fixed center;
+    background: url("../assets/images/our-story-parallax.png") no-repeat fixed center;
     background-size: cover;
     height: 80vh;
    
@@ -568,16 +571,61 @@ h6 {
 }
 
 .our-team--section {
-  text-align: center;
+text-align: center;
 background: #807F3C;
-    color: #fff;
-    padding: 150px 25%;
+color: #fff;
+padding: 150px 25%;
 }
+
+.team-members--cards {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.team-card {
+    width: min-content;
+    background: #fff;
+    color: #000;
+    position: relative;
+    display: inline-block;
+    margin: 25px;
+    border: 1px solid #e1dfdf;
+    transition: 0.3s;
+    
+}
+
+.team-card:hover {
+    transform: scale(1.1);
+}
+
+
+.team-card img {
+    height: 500px;
+}
+
+
+
+.team-card h1 {
+    font-size: 150%;
+    position: absolute;
+    bottom: 0;
+    background: #46433e;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+}
+
+
+
+/*----------------------TESTIMONIALS CAROUSEL---------------*/
+
 
 .testimonials-section > h1 {
     text-align: center;
     font-size: 200%;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 
@@ -617,6 +665,8 @@ background: #807F3C;
     color: #000;
     background: none;
 }
+
+
 
 
 /*--------------------------------------ABOUT US PAGE STYLING END-----------------------------*/
