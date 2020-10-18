@@ -533,7 +533,7 @@ h6 {
 } 
 
 .parallax-one {
-    background: url("../assets/images/our-story-parallax.png") no-repeat fixed center;
+    background: url("../assets/images/parallax-one-test.png") no-repeat fixed center;
     background-size: cover;
     height: 80vh;
    
@@ -556,7 +556,7 @@ h6 {
     text-align: center;
     background: #46433E;
     color: #fff;
-    padding: 150px 30%;
+    padding: 150px 25%;
     
 }
 
@@ -647,6 +647,12 @@ background: #807F3C;
   .gallery-wrapper img:nth-child(10) {
     display: none;
   }
+
+    .our-story--section,
+   .our-mission--section, 
+   .our-team--section {
+       padding: 150px 5%;
+   }
 }
 
 @media only screen and (max-width: 575px) {
@@ -787,10 +793,6 @@ background: #807F3C;
 }
 
 @media only screen and (max-width: 695px) {
-  .form-inline {
-    display: none;
-  }
-
   .button--primary {
     margin-right: 30px;
   }
@@ -803,11 +805,7 @@ background: #807F3C;
   }
 }
 
-@media only screen and (min-width: 696px) {
-  .header--part--one .button--secondary {
-    display: none;
-  }
-}
+
 
 @media only screen and (max-width: 768px) {
   .nav-link:hover::before {
@@ -857,6 +855,8 @@ background: #807F3C;
   .carousel-item {
     padding: 0 10%;
 }
+
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -877,6 +877,26 @@ background: #807F3C;
 
 }
 
+  .form-inline {
+    display: none;
+  }
+
+   .header--part--one .button--secondary {
+    margin-top: 25px;
+  }
+
+  .our-story--section,
+   .our-mission--section, 
+   .our-team--section {
+       padding: 150px 15%;
+   }
+
+}
+
+@media only screen and (min-width: 954px) {
+  .header--part--one .button--secondary {
+    display: none;
+  }
 }
 
 
@@ -900,6 +920,8 @@ background: #807F3C;
   .header--intro {
     font-size: 1.25rem;
   }
+
+
 }
 
 @media only screen and (max-width: 1350px) {
