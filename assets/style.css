@@ -208,14 +208,13 @@ h6 {
 
 .navbar {
   height: 120px;
-  padding: 0 16;
+  padding: 0 16px;
   width: 100%;
   background: #96abb0;
   z-index: 10;
 }
 
 .navbar-brand img {
-  max-width: 100%;
   max-height: 150px;
 }
 
@@ -399,7 +398,7 @@ h6 {
 .service--box--three {
   height: 300px;
   text-align: center;
-  padding: 45px;
+  padding: 40px 25px;
   box-shadow: 1px 8px 25px #888888;
 }
 
@@ -530,7 +529,7 @@ h6 {
 }
 
 .about-us-parallax p {
-    font-size: 125%;d
+    font-size: 125%;
 } 
 
 .parallax-one {
@@ -836,6 +835,7 @@ background: #807F3C;
 
 }
 
+}
 
 
 @media only screen and (max-width: 1100px) {
@@ -865,4 +865,4 @@ background: #807F3C;
     width: 250px;
     height: 450px;
   }
-}
+} 
