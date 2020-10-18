@@ -142,7 +142,6 @@ h6 {
   font-weight: 500;
 }
 
-
 /*--------------------BUTTONS-------------------*/
 
 .button--primary {
@@ -197,12 +196,11 @@ h6 {
 }
 
 .horizontal-rule--small {
-    width: 15%;
-    height: 2px;
-    background: #fff;
-    margin-left: 0
+  width: 15%;
+  height: 2px;
+  background: #fff;
+  margin-left: 0;
 }
-
 
 /*--------------------NAVBAR-------------------*/
 
@@ -251,12 +249,11 @@ h6 {
 }
 
 .dropdown-menu.show {
-    background: #46433e;
- 
+  background: #46433e;
 }
 
 .dropdown-item {
-    color: #fff;
+  color: #fff;
 }
 
 .hide--item--col--lg {
@@ -286,7 +283,6 @@ h6 {
 
 .footer-wrapper p {
   font-size: 1.1em;
-
 }
 
 .footer-wrapper i {
@@ -307,49 +303,46 @@ h6 {
 }
 
 .bottom-space {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 /*--------------------COPYRIGHT SECTION-------------------*/
 
 .copyright-bar {
-   
-    color: black;
-    height: 40px;
-    text-align: center;
-    background: #B36B39;
-
+  color: black;
+  height: 40px;
+  text-align: center;
+  background: #b36b39;
 }
 
 .copyright-bar p {
-    padding: 10px;
-    font-size: 100%;
-    color: #fff;
+  padding: 10px;
+  font-size: 100%;
+  color: #fff;
 }
 
 .icons-wrapper ul {
-    width: 100%;
-    text-align: right;
-    padding-top: 2%;
+  width: 100%;
+  text-align: right;
+  padding-top: 2%;
 }
 .icons-wrapper ul li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .icons-wrapper i {
-    font-size: 1.5em;
-    padding-right: 15px;
-     transition: all 0.15s ease-in-out;
+  font-size: 1.5em;
+  padding-right: 15px;
+  transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   -webkit-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
 }
 
 .icons-wrapper i:hover {
-    color: #807f3c;
+  color: #807f3c;
 }
 
 /*------------------------------------------HOMEPAGE STYLING START------------------------*/
-
 
 /*--------------------HEADER SECTION-------------------*/
 
@@ -412,12 +405,12 @@ h6 {
 }
 
 .services-cta {
-    text-decoration: none !important;
-    display: inline-block;
-    margin-top: 8%;
-    border-radius: .25rem;
-    background: #46433e;
-    box-shadow: none;
+  text-decoration: none !important;
+  display: inline-block;
+  margin-top: 8%;
+  border-radius: 0.25rem;
+  background: #46433e;
+  box-shadow: none;
 }
 
 /*------------------FACTS SECTION---------------*/
@@ -476,14 +469,13 @@ h6 {
 .gallery-wrapper img {
   max-width: 100%;
   max-height: 100%;
- opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .gallery-wrapper img:hover {
-		opacity: .85;
-        
+  opacity: 0.85;
 }
 
 .gallery-wrapper.row {
@@ -516,161 +508,144 @@ h6 {
 
 /*--------------------------------------HOMEPAGE STYLING END-----------------------------*/
 
-
-
 /*--------------------------------------ABOUT US PAGE STYLING START-----------------------------*/
-
 
 /*----------------------PARALLAX SECTIONS---------------*/
 
 .about-us-parallax i {
-    padding-bottom: 2%;
+  padding-bottom: 3%;
 }
 
 .about-us-parallax h2 {
-    font-size: 200%;
+  font-size: 200%;
 }
 
 .about-us-parallax p {
-    font-size: 125%;
-} 
+  font-size: 125%;
+}
 
 .parallax-one {
-    background: url("../assets/images/our-story-parallax.png") no-repeat fixed center;
-    background-size: cover;
-    height: 80vh;
-   
+  background: url("../assets/images/our-story-parallax.png") no-repeat fixed
+    center;
+  background-size: cover;
+  height: 57vh;
 }
 
 .parallax-two {
- background: url("../assets/images/our-mission-parallax.png") no-repeat fixed center;
-    background-size: cover;
-    height: 80vh;
+  background: url("../assets/images/our-mission-parallax.png") no-repeat fixed
+    center;
+  background-size: cover;
+  height: 57vh;
 }
 
 .parallax-three {
- background: url("../assets/images/our-team-parallax.png") no-repeat fixed center;
-    background-size: cover;
-    height: 80vh;
+  background: url("../assets/images/our-team-parallax.png") no-repeat fixed
+    center;
+  background-size: cover;
+  height: 57vh;
 }
 
-
 .our-story--section {
-    text-align: center;
-    background: #46433E;
-    color: #fff;
-    padding: 150px 25%;
-    
+  text-align: center;
+  background: #46433e;
+  color: #fff;
+  padding: 10%;
 }
 
 .our-mission--section {
-    text-align: center;
-    background: #B36B39;
-    color: #fff;
-    padding: 150px 25%;
+  text-align: center;
+  background: #b36b39;
+  color: #fff;
+  padding: 10%;
 }
 
 .our-team--section {
-text-align: center;
-background: #807F3C;
-color: #fff;
-padding: 150px 25%;
+  text-align: center;
+  background: #807f3c;
+  color: #fff;
+  padding: 10%;
 }
 
 .team-members--cards {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 50px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
 }
 
 .team-card {
-    width: min-content;
-    background: #fff;
-    color: #000;
-    position: relative;
-    display: inline-block;
-    margin: 25px;
-    border: 1px solid #e1dfdf;
-    transition: 0.3s;
-    
+  width: min-content;
+  background: #fff;
+  color: #000;
+  position: relative;
+  display: inline-block;
+  margin: 25px;
+  border: 1px solid #e1dfdf;
+  transition: 0.7s ease-in-out;
 }
 
 .team-card:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 
 .team-card img {
-    height: 500px;
+  height: 500px;
 }
-
-
 
 .team-card h1 {
-    font-size: 150%;
-    position: absolute;
-    bottom: 0;
-    background: #46433e;
-    width: 100%;
-    padding: 10px;
-    color: #fff;
+  font-size: 150%;
+  position: absolute;
+  bottom: 0;
+  background: #46433e;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
 }
-
-
 
 /*----------------------TESTIMONIALS CAROUSEL---------------*/
 
-
 .testimonials-section > h1 {
-    text-align: center;
-    font-size: 200%;
-    margin-top: 150px;
+  text-align: center;
+  font-size: 200%;
+  margin-top: 150px;
 }
 
-
 .testimonials-carousel {
-    height: auto;
-    text-align: center;
-    padding: 50px 25px;
-
+  height: auto;
+  text-align: center;
+  padding: 50px 25px;
 }
 
 .testimonials-carousel img {
-    border-radius: 50%;
-    margin-bottom: 25px;
-    
+  border-radius: 50%;
+  margin-bottom: 25px;
 }
 
 .carousel-item {
-    padding: 0 30%;
+  padding: 0 30%;
 }
 
 .carousel-inner h1 {
-    font-size: 150%;
-    padding-bottom: 10px;
+  font-size: 150%;
+  padding-bottom: 10px;
 }
 
 .carousel-inner p {
-    font-size: 125%;
-    padding-bottom: 5%;
+  font-size: 125%;
+  padding-bottom: 5%;
 }
 
 .carousel-indicators li {
-    background-color: #000;
+  background-color: #000;
 }
 
-.carousel-control-prev-icon, 
+.carousel-control-prev-icon,
 .carousel-control-next-icon {
-    color: #000;
-    background: none;
+  color: #000;
+  background: none;
 }
-
-
-
 
 /*--------------------------------------ABOUT US PAGE STYLING END-----------------------------*/
-
 
 /*--------------------MEDIA QUERY-------------------*/
 
@@ -698,11 +673,46 @@ padding: 150px 25%;
     display: none;
   }
 
-    .our-story--section,
-   .our-mission--section, 
-   .our-team--section {
-       padding: 150px 5%;
+  .our-story--section,
+  .our-mission--section,
+  .our-team--section {
+    padding: 150px 5%;
+  }
+
+  .about-us-parallax h2 {
+    font-size: 175%;
+}
+
+
+.about-us-parallax p {
+    font-size: 120%;
+}
+
+  .team-members--cards {
+    width: 100%;
+  }
+
+  .team-card img {
+      height: 400px;
+  }
+
+   .team-card h1 {
+       font-size: 120%;
    }
+
+  .testimonials-section > h1 {
+      font-size: 175%;
+  }
+
+  .carousel-inner p {
+      font-size: 100%;
+  } 
+
+  .newsletter-wrapper h1 {
+    font-size: 1.35em;
+
+}
+
 }
 
 @media only screen and (max-width: 575px) {
@@ -762,21 +772,21 @@ padding: 150px 25%;
     display: block;
   }
 
-    .dropdown-menu.show {
-        text-align: center;
-        background: none;
-        border: none;
-    }
+  .dropdown-menu.show {
+    text-align: center;
+    background: none;
+    border: none;
+  }
 
-    .dropdown-item {
-        color: #fff;
-        font-size: 110%;
-    }
+  .dropdown-item {
+    color: #fff;
+    font-size: 110%;
+  }
 
-    .dropdown-item:hover {
+  .dropdown-item:hover {
     background-color: transparent;
     color: #fff;
-}
+  }
 
   .button--secondary {
     padding: 15px 30px;
@@ -822,24 +832,21 @@ padding: 150px 25%;
   }
 
   .footer-wrapper {
-      text-align: center;
+    text-align: center;
   }
 
   .horizontal-rule--small {
-      margin: 5px auto 25px auto;
-    
+    margin: 5px auto 25px auto;
   }
 
   .story-footer--container {
-      margin-top: 5%;
+    margin-top: 5%;
   }
 
-.icons-wrapper ul {
+  .icons-wrapper ul {
     text-align: center;
     margin-top: 3%;
-}
-
-
+  }
 }
 
 @media only screen and (max-width: 695px) {
@@ -847,15 +854,13 @@ padding: 150px 25%;
     margin-right: 30px;
   }
 
-.services-cta {
+  .services-cta {
     margin-right: 0;
-}
+  }
   .facts-wrapper {
     text-align: -webkit-center;
   }
 }
-
-
 
 @media only screen and (max-width: 768px) {
   .nav-link:hover::before {
@@ -890,7 +895,7 @@ padding: 150px 25%;
   }
 
   .header--part--two img {
-      top: 30px;
+    top: 30px;
   }
 
   .gallery-wrapper img {
@@ -899,14 +904,12 @@ padding: 150px 25%;
   }
 
   .service-footer--container {
-      margin-top: 5%;
+    margin-top: 5%;
   }
 
   .carousel-item {
     padding: 0 10%;
-}
-
-
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -921,26 +924,24 @@ padding: 150px 25%;
     margin-bottom: 20px;
   }
 
-.footer-wrapper {
+  .footer-wrapper {
     padding: 50px 10px;
     font-size: calc(100% - 1px);
-
-}
+  }
 
   .form-inline {
     display: none;
   }
 
-   .header--part--one .button--secondary {
+  .header--part--one .button--secondary {
     margin-top: 25px;
   }
 
   .our-story--section,
-   .our-mission--section, 
-   .our-team--section {
-       padding: 150px 15%;
-   }
-
+  .our-mission--section,
+  .our-team--section {
+    padding: 150px 15%;
+  }
 }
 
 @media only screen and (min-width: 954px) {
@@ -949,7 +950,6 @@ padding: 150px 25%;
   }
 }
 
-
 @media only screen and (max-width: 1100px) {
   .button--secondary,
   .button--primary {
@@ -957,7 +957,7 @@ padding: 150px 25%;
   }
 
   .services-cta {
-      padding: 10px 25px;
+    padding: 10px 25px;
   }
 
   .header--part--one {
@@ -970,8 +970,6 @@ padding: 150px 25%;
   .header--intro {
     font-size: 1.25rem;
   }
-
-
 }
 
 @media only screen and (max-width: 1350px) {
@@ -979,4 +977,18 @@ padding: 150px 25%;
     width: 250px;
     height: 450px;
   }
-} 
+}
+
+@media only screen and (min-width: 1400px) {
+  .parallax-one,
+  .parallax-two,
+  .parallax-three {
+    height: 70vh;
+  }
+
+  .our-story--section,
+  .our-mission--section,
+  .our-team--section {
+    padding: 150px 25%;
+  }
+}
