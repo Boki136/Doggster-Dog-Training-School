@@ -650,8 +650,11 @@ h6 {
 /*--------------------------------------CONTACT US PAGE STYLING START-----------------------------*/
 
 
+.contact-us--section {
+    margin-top: 10%;
+}
+
 .contact-us--section h3 {
-    text-align: center;
     font-size: 125%;
     margin-bottom: 10%;
 }
@@ -660,6 +663,13 @@ h6 {
     color: #807f3c;
 }
 
+.main-title {
+    display: none;
+}
+
+.address-section--mobile {
+    display: none;
+}
 
 .contact-us--section i {
   margin-top: 10%;
@@ -668,11 +678,9 @@ h6 {
 }
 
 .contact-title {
-  text-align: center;
   font-size: 200%;
-  margin-top: 10%;
-}
 
+}
 
 .contact-us--section h2 {
   font-size: 175%;
@@ -683,17 +691,21 @@ h6 {
   font-size: 125%;
 }
 
+.contact--reservation {
+    display: none;
+}
+
 label {
     display: block;
 }
 
 input {
     padding: 12px;
-    width: 40%;
+    width: 45%;
 }
 
 textarea {
-    width: 80%;
+    width: 90%;
     max-height: 300px;
 }
 
@@ -707,11 +719,11 @@ legend:nth-child(even) {
 }
 
 input:nth-child(5), input:nth-child(7)  {
-    width: 80%;
+    width: 90%;
 }
 
 input:last-child {
-    width: 20%;
+   
     display: block;
     margin-top: 2%;
     background: #96abb0;
@@ -935,6 +947,24 @@ input:last-child:hover {
   .facts-wrapper {
     text-align: -webkit-center;
   }
+
+  .address-section {
+      display: none;
+  }
+
+  .address-section--mobile {
+      display:  block;
+      margin-top: 50px;
+  }
+
+  .address-section--mobile i {
+      display: none;
+  }
+
+  .main-title {
+    display: block;
+}
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -991,6 +1021,11 @@ input:last-child:hover {
   .service--box--one {
     margin-bottom: 30px;
   }
+
+  .contact--reservation {
+    display: inline-block;
+    padding: 10px 7px !important;
+}
 
   .service--box--one,
   .service--box--two,
