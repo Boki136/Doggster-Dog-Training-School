@@ -205,7 +205,7 @@ h6 {
 /*--------------------NAVBAR-------------------*/
 
 .navbar {
-  height: 120px;
+  height: fit-content;
   padding: 0 16px;
   width: 100%;
   background: #96abb0;
@@ -213,7 +213,7 @@ h6 {
 }
 
 .navbar-brand img {
-  max-height: 150px;
+  max-height: 125px;
 }
 
 .nav-link {
@@ -232,6 +232,9 @@ h6 {
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.38s ease-in-out 0.05s;
+  -moz-transition: all 0.38s ease-in-out 0.05s;
+  -webkit-transition: all 0.38s ease-in-out 0.05s;
+  -o-transition: all 0.38s ease-in-out 0.05s;
 }
 
 .nav-link:hover::before {
@@ -295,11 +298,6 @@ h6 {
   color: #fff;
   padding-bottom: 10px;
   display: block;
-}
-
-.footer-wrapper a span {
-  padding-left: 8px;
-  font-size: 150%;
 }
 
 .bottom-space {
@@ -470,8 +468,11 @@ h6 {
   max-width: 100%;
   max-height: 100%;
   opacity: 1;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
 }
 
 .gallery-wrapper img:hover {
@@ -581,7 +582,11 @@ h6 {
   display: inline-block;
   margin: 25px;
   border: 1px solid #e1dfdf;
-  transition: 0.7s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+
 }
 
 .team-card:hover {
@@ -663,8 +668,13 @@ h6 {
     color: #807f3c;
 }
 
-.main-title {
+.mobile-title--section {
     display: none;
+}
+
+.address-section hr {
+    background: #000;
+    width: 25%;
 }
 
 .address-section--mobile {
@@ -682,13 +692,14 @@ h6 {
 
 }
 
+
 .contact-us--section h2 {
   font-size: 175%;
   padding-bottom: 5%;
 }
 
 .contact-us--section p {
-  font-size: 125%;
+  font-size: 120%;
 }
 
 .contact--reservation {
@@ -729,7 +740,10 @@ input:last-child {
     background: #96abb0;
     border: none;
     color: #fff;
-    transition:  0.3s ease-in-out;
+    transition:  all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 input:last-child:hover {
@@ -822,21 +836,18 @@ input:last-child:hover {
     padding-bottom: 0;
   }
 
-  .navbar-brand img {
-    height: 90px;
-  }
-
   .navbar-collapse.collapse.show {
     background-color: #96abb0;
     height: 100vh;
     text-align: center;
     padding: 120px 20px 0 20px;
+    border-top: 2px solid #fff;
   }
 
   .nav-link {
     font-size: 135%;
   }
-
+  
   .nav-link:hover {
     color: #fff;
   }
@@ -849,6 +860,11 @@ input:last-child:hover {
     padding: 25px;
     color: #fff;
     margin: 0 auto;
+     transition:  all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+    
   }
 
   .social-icons--mobile i:hover {
@@ -921,9 +937,26 @@ input:last-child:hover {
   .footer-wrapper {
     text-align: center;
   }
-
+  
   .horizontal-rule--small {
     margin: 5px auto 25px auto;
+  }
+  .mobile-title--section .horizontal-rule--small {
+    margin: 20px 0 25px 0;
+    width: 30%;
+    background: #000;
+  }
+
+  .address-section--mobile h2 {
+      font-size: 150%;
+  }
+
+  .form-section legend {
+      font-size: 100%;
+  }
+
+  .contact-title {
+      font-size: 170%;
   }
 
   .story-footer--container {
@@ -933,6 +966,10 @@ input:last-child:hover {
   .icons-wrapper ul {
     text-align: center;
     margin-top: 3%;
+  }
+
+  .parallax-one, .parallax-two, .parallax-three {
+      height: 45vh;
   }
 }
 
@@ -961,7 +998,7 @@ input:last-child:hover {
       display: none;
   }
 
-  .main-title {
+  .mobile-title--section {
     display: block;
 }
 
