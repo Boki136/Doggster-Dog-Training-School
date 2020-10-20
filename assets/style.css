@@ -955,6 +955,10 @@ input:last-child:hover {
       font-size: 100%;
   }
 
+  .input {
+      padding: 10px;
+  }
+
   .contact-title {
       font-size: 170%;
   }
