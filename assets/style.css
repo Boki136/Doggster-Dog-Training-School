@@ -467,16 +467,15 @@ h6 {
 .gallery-wrapper img {
   max-width: 100%;
   max-height: 100%;
-  opacity: 1;
+  opacity: 0.90;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
-}
 
 .gallery-wrapper img:hover {
-  opacity: 0.85;
+  opacity: 1;
 }
 
 .gallery-wrapper.row {
@@ -684,7 +683,16 @@ h6 {
 .contact-us--section i {
   margin-top: 10%;
   padding-right: 4%;
-  color: #b36b39;
+  color: #46433e;
+   transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+
+.contact-us--section i:hover {
+    color: #b36b39;
 }
 
 .contact-title {
