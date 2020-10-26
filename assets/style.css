@@ -186,7 +186,7 @@ h6 {
   background: #807f3c;
   color: #fff;
   border: none;
-  padding: 12px 20px;
+  padding: 12px 35px;
 }
 
 /*--------------------HORIZONTAL RULE-------------------*/
@@ -285,7 +285,7 @@ h6 {
 .breadcrumb {
   margin: 0;
   padding: 35px;
-  background: none;
+  background: #f2f2f2;
 }
 
 .breadcrumb-item a {
@@ -526,6 +526,7 @@ padding: 5px 0;
 .newsletter-wrapper input {
   width: 50%;
   height: 40px;
+  line-height: 42px;
 }
 
 /*--------------------------------------HOMEPAGE STYLING END-----------------------------*/
@@ -604,10 +605,10 @@ background-position: top;
   display: inline-block;
   margin: 25px;
   border: 1px solid #e1dfdf;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 .team-card:hover {
@@ -1184,6 +1185,7 @@ input:last-child:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "img-three";
+    grid-gap: 0;
   }
 
 }
