@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chilanka&family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Kalam:wght@300;400;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap');
+
 /*--------------------CSS RESET-------------------*/
 
 html,
@@ -89,6 +89,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -106,6 +107,7 @@ section {
 }
 body {
   line-height: 1;
+    background-color: #fafafa;
 }
 
 ol,
@@ -128,9 +130,23 @@ table {
   border-spacing: 0;
 }
 
+html, body {
+    overflow-x:hidden;
+}
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 225%;
+  
+}
+
+h2 {
+    font-size: 175%;
 }
 
 h1,
@@ -141,7 +157,12 @@ h5,
 h6 {
   font-family: "Grandstander", sans-serif;
   font-weight: 500;
-  font-size: 200%;
+  letter-spacing: 1px;
+  
+}
+
+p {
+    font-size: 125%;
 }
 
 /*--------------------BUTTONS-------------------*/
@@ -192,7 +213,7 @@ h6 {
 /*--------------------HORIZONTAL RULE-------------------*/
 
 .horizontal-rule {
-  width: 10%;
+  width: 5%;
   height: 3px;
   background: black;
 }
@@ -202,6 +223,14 @@ h6 {
   height: 2px;
   background: #fff;
   margin-left: 0;
+}
+
+.bottom-space-lg {
+    margin-bottom: 65px;
+}
+
+.bottom-space-sm {
+  margin-bottom: 20px;
 }
 
 /*--------------------NAVBAR-------------------*/
@@ -253,10 +282,6 @@ h6 {
   color: #fff;
 }
 
-.nav-item {
-  padding-left: 10px;
-}
-
 .form-inline a {
     box-shadow: none;
     background: #46433e;
@@ -302,7 +327,6 @@ h6 {
 }
 
 .footer-wrapper h2 {
-  font-size: 1.4em;
   padding-bottom: 8px;
 }
 
@@ -324,9 +348,7 @@ padding: 5px 0;
   display: block;
 }
 
-.bottom-space {
-  margin-bottom: 20px;
-}
+
 /*--------------------COPYRIGHT SECTION-------------------*/
 
 .copyright-bar {
@@ -337,7 +359,7 @@ padding: 5px 0;
 }
 
 .copyright-bar p {
-  padding: 10px;
+  padding-top: 10px;
   font-size: 100%;
   color: #fff;
 }
@@ -402,16 +424,15 @@ padding: 5px 0;
 
 /*------------------SERVICE SECTION----------------------*/
 
-.service--wrapper h1 {
-  font-size: 1.2em;
-  font-weight: 700;
+.service--wrapper h2 {
+  font-weight: 600;
   padding-top: 25px;
 }
 
 .service--box--one,
 .service--box--two,
 .service--box--three {
-  height: 300px;
+  height: 350px;
   text-align: center;
   padding: 40px 25px;
   box-shadow: 1px 8px 25px #888888;
@@ -433,15 +454,15 @@ padding: 5px 0;
   border-radius: 0.25rem;
   background: #46433e;
   box-shadow: none;
+  padding: 15px 25px;
 }
 
 /*------------------FACTS SECTION---------------*/
 
 .facts-wrapper {
   height: max-content;
-  margin-top: 100px;
   width: 90%;
-  margin: 100px auto;
+  margin: 150px auto;
 }
 
 .facts-wrapper h1 {
@@ -450,7 +471,7 @@ padding: 5px 0;
 
 .facts-wrapper h2 {
   padding-top: 10px;
-  font-size: 1.2em;
+
 }
 
 .facts-wrapper img {
@@ -480,15 +501,91 @@ padding: 5px 0;
   color: #a6a552;
 }
 
+/*--------------------WHY CHOOSE US SECTION-------------------*/
+
+.accredations-wrapper h1 {
+    text-align: center;
+}
+
+.accredations-wrapper p:nth-child(1) {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    line-height: 25px;
+}
+
+.flip-box-container {
+    display: flex;
+    margin: 100px auto 150px auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+
+.flip-box {
+    background-color: transparent;
+    width: 24%;
+    height: 450px;
+    perspective: 1000px;
+    background: transparent;
+
+}
+
+
+.flip-box-inner {
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.95s;
+    background: #fafafa;
+}
+
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 8px 5px 15px #96abb0;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front img {
+    margin-bottom: 35px;
+}
+
+.flip-box-back {
+    transform: rotateY(180deg);
+    background: #fafafa;
+}
+
+.flip-box-back span {
+    font-weight: 600;
+}
+
+
+
 /*--------------------GALLERY SECTION-------------------*/
+
 
 .gallery-wrapper h1 {
   text-align: center;
 }
 
 .gallery-wrapper img {
-  max-width: 100%;
-  max-height: 100%;
+height: 350px;
+width: 200px;
   opacity: 0.9;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -677,7 +774,7 @@ background-position: top;
 /*--------------------------------------CONTACT US PAGE STYLING START-----------------------------*/
 
 .contact-us--section {
-  margin-top: 10%;
+  margin-top: 100px;
 }
 
 .contact-us--section h3 {
@@ -792,7 +889,7 @@ input:last-child:hover {
 
 .service-content--wrapper {
   width: 80%;
-  margin: 50px auto 0 auto;
+  margin: 0 auto;
 }
 
 .service-content--wrapper p {
@@ -991,10 +1088,6 @@ input:last-child:hover {
      font-size: 175%;
  }
 
- h2 {
-     font-size: 150% !important;
- }
-
   .form-inline {
     display: inline-block !important;
   }
@@ -1022,7 +1115,7 @@ input:last-child:hover {
   }
 
   .nav-link {
-    font-size: 135%;
+    font-size: 150%;
   }
 
   .nav-link:hover {
@@ -1121,9 +1214,6 @@ input:last-child:hover {
     background: #000;
   }
 
-  .address-section--mobile h2 {
-    font-size: 150%;
-  }
 
   .form-section legend {
     font-size: 100%;
@@ -1279,6 +1369,13 @@ input:last-child:hover {
 }
 
 @media only screen and (max-width: 992px) {
+
+.header--part--two img {
+    max-width: 120%;
+    left: -30px;
+}
+
+
   .service--box--one {
     margin-bottom: 30px;
   }
@@ -1337,7 +1434,8 @@ input:last-child:hover {
   }
 
   .header--part--one {
-    margin-top: 50px;
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
 
   .header--title {
