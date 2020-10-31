@@ -396,7 +396,7 @@ padding: 5px 0;
 
 .header--title {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 250%;
   padding-bottom: 25px;
 }
 
@@ -503,6 +503,13 @@ padding: 5px 0;
 
 /*--------------------WHY CHOOSE US SECTION-------------------*/
 
+
+.accredations-wrapper {
+    background: url("../assets/images/dog-paws-background.png") repeat-x bottom;
+    height: 950px;
+    
+}
+
 .accredations-wrapper h1 {
     text-align: center;
 }
@@ -524,7 +531,6 @@ padding: 5px 0;
 
 
 .flip-box {
-    background-color: transparent;
     width: 24%;
     height: 450px;
     perspective: 1000px;
@@ -563,6 +569,12 @@ padding: 5px 0;
 
 .flip-box-front img {
     margin-bottom: 35px;
+    max-width: 100%;
+    height: auto;
+}
+
+.mobile-icon {
+    display: none;
 }
 
 .flip-box-back {
@@ -1278,6 +1290,18 @@ input:last-child:hover {
     grid-gap: 0;
   }
 
+  .flip-box-inner {
+      transform: rotateY(180deg);
+  }
+
+  .mobile-icon {
+    display: inline-block;
+    position: relative;
+    bottom: 30px;
+    width: 110px;
+
+}
+
 }
 
 @media only screen and (max-width: 695px) {
@@ -1414,6 +1438,20 @@ input:last-child:hover {
   .service-content--wrapper {
     width: 90%;
     margin: 50px auto 0 auto;
+}
+
+.accredations-wrapper {
+    height: max-content;
+}
+
+.flip-box-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flip-box {
+    width: 300px;
+    margin: 15px;
 }
 }
 
