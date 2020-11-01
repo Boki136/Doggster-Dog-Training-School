@@ -353,14 +353,30 @@
       <h1>Gallery</h1>
       <hr class="horizontal-rule bottom-space-lg" />
 
-      <div class="row justify-content-center">
-        <img src="assets/images/gallery/row1-1.png" alt="trianer with a dog" />
-        <img
+        <!--GALLERY SLIDESHOW-->
+
+      <div id="carouselExampleIndicators" class="carousel slide gallery-carousel" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+         <img src="assets/images/gallery/row1-1.png" alt="trianer with a dog" />
+         <img
           src="assets/images/gallery/row1-2.png"
           alt="dog holding a toy sitting down"
         />
-        <img src="assets/images/gallery/row1-3.png" alt="smiley dog" />
-        <img
+          <img src="assets/images/gallery/row1-3.png" alt="smiley dog" />
+              <img
+          src="assets/images/gallery/row2-4.png"
+          alt="trainer and dog playing"
+        />
+        
+    </div>
+    <div class="carousel-item">
+         <img
           src="assets/images/gallery/row1-4.png"
           alt="dog holding human arm and chewing toy"
         />
@@ -372,7 +388,13 @@
           src="assets/images/gallery/row1-6.png"
           alt="dog sitting down holding paw in the airs"
         />
-        <img src="assets/images/gallery/row2-1.png" alt="small dog standing" />
+           <img
+          src="assets/images/gallery/row2-5.png"
+          alt="dog lookin up for the treat"
+        />
+    </div>
+    <div class="carousel-item">
+         <img src="assets/images/gallery/row2-1.png" alt="small dog standing" />
         <img
           src="assets/images/gallery/row2-2.png"
           alt="puppy looking through wooden fence"
@@ -381,19 +403,14 @@
           src="assets/images/gallery/row2-3.png"
           alt="dog jumping over wooden obstacle"
         />
-        <img
-          src="assets/images/gallery/row2-4.png"
-          alt="trainer and dog playing"
-        />
-        <img
-          src="assets/images/gallery/row2-5.png"
-          alt="dog lookin up for the treat"
-        />
-        <img
+          <img
           src="assets/images/gallery/row2-6.png"
           alt="two dogs walking in the nature"
-        />
-      </div>
+        /> 
+    </div>
+  </div>
+</div>
+      
     </section>
 
     <!--NEWSLETTER SECTION-->

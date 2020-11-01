@@ -250,6 +250,7 @@ p {
 .nav-link {
   color: #fff !important;
   position: relative;
+  font-size: 120%;
 }
 
 .navbar-collapse {
@@ -515,6 +516,10 @@ padding: 5px 0;
 }
 
 .accredations-wrapper p:nth-child(1) {
+    font-size: 150%;
+}
+
+.accredations-wrapper p:nth-child(1) {
     width: 75%;
     text-align: center;
     margin: auto;
@@ -558,7 +563,6 @@ padding: 5px 0;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 15px;
     box-sizing: border-box;
     box-shadow: 8px 5px 15px #96abb0;
 }
@@ -582,6 +586,10 @@ padding: 5px 0;
     background: #fafafa;
 }
 
+.flip-box-back p {
+    padding: 5%;
+}
+
 .flip-box-back span {
     font-weight: 600;
 }
@@ -589,28 +597,26 @@ padding: 5px 0;
 
 
 /*--------------------GALLERY SECTION-------------------*/
-
+.gallery-wrapper {
+    margin: 100px 0 150px 0;
+    text-align: center;
+}
 
 .gallery-wrapper h1 {
   text-align: center;
 }
 
 .gallery-wrapper img {
-height: 350px;
-width: 200px;
-  opacity: 0.9;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
+height: auto;
+max-width: 100%;
 }
 
-.gallery-wrapper img:hover {
-  opacity: 1;
+.gallery-carousel .carousel-indicators {
+    bottom: -25px;
 }
 
-.gallery-wrapper.row {
-  margin-top: 50px;
+.gallery-carousel .carousel-item {
+    padding: 0;
 }
 
 /*----------------------NEWSLETTER SECTION---------------*/
@@ -678,23 +684,9 @@ background-position: top;
   height: 57vh;
 }
 
-.our-story--section {
+.about-content {
   text-align: center;
   background: #46433e;
-  color: #fff;
-  padding: 10%;
-}
-
-.our-mission--section {
-  text-align: center;
-  background: #b36b39;
-  color: #fff;
-  padding: 10%;
-}
-
-.our-team--section {
-  text-align: center;
-  background: #807f3c;
   color: #fff;
   padding: 10%;
 }
@@ -704,16 +696,15 @@ background-position: top;
   margin: 0 auto;
   text-align: center;
   padding-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .team-card {
   width: min-content;
-  background: #fff;
   color: #000;
   position: relative;
-  display: inline-block;
   margin: 25px;
-  border: 1px solid #e1dfdf;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -721,21 +712,11 @@ background-position: top;
 }
 
 .team-card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .team-card img {
-  height: 500px;
-}
-
-.team-card h1 {
-  font-size: 150%;
-  position: absolute;
-  bottom: 0;
-  background: #46433e;
-  width: 100%;
-  padding: 10px;
-  color: #fff;
+  height: 650px;
 }
 
 /*----------------------TESTIMONIALS CAROUSEL---------------*/
@@ -780,6 +761,8 @@ background-position: top;
   color: #000;
   background: none;
 }
+
+
 
 /*--------------------------------------ABOUT US PAGE STYLING END-----------------------------*/
 
@@ -885,6 +868,8 @@ input:last-child {
 input:last-child:hover {
   background: #b36b39;
 }
+
+
 /*--------------------------------------CONTACT US PAGE STYLING END-----------------------------*/
 
 /*--------------------------------------SERVICES PAGE STYLING START-----------------------------*/
@@ -1092,6 +1077,10 @@ input:last-child:hover {
   .newsletter-wrapper h1 {
     font-size: 1.35em;
   }
+
+  .flip-box-back p {
+      padding: 5%;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -1298,7 +1287,7 @@ input:last-child:hover {
     display: inline-block;
     position: relative;
     bottom: 30px;
-    width: 110px;
+    width: 100px;
 
 }
 
@@ -1331,6 +1320,11 @@ input:last-child:hover {
 
   .mobile-title--section {
     display: block;
+  }
+
+  .flip-box-container {
+      background: url("../assets/images/dog-paws-background.png") bottom;
+      background-repeat-x: no-repeat;
   }
 }
 
@@ -1446,7 +1440,8 @@ input:last-child:hover {
 
 .flip-box-container {
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .flip-box {
