@@ -947,61 +947,43 @@ input:last-child:hover {
 
 .pricing-cards {
   margin-top: 50px;
+  justify-content: center;
+
 }
 
 .pricing-card {
   width: 350px;
   height: 550px;
-  display: inline-block;
   border: 1px solid #eaeaea;
-  margin-top: 25px;
-}
-
-.top-part {
-  padding: 15% 10%;
-  color: #fff;
-  background-color: #807f3c;
-  background-image: linear-gradient(#ce6d22, #1690ab);
-}
-
-.top-part h1 {
-  padding-bottom: 5%;
-}
-
-.top-part span {
-  font-size: 125%;
-  position: relative;
-  bottom: 20px;
-}
-
-.top-part p {
-  display: inline-block;
-  padding: 10% 0 15% 0;
-  font-size: 300%;
-}
-
-.top-part .btn {
-  display: block;
-  background: #46433e;
-  box-shadow: none;
-}
-
-.bottom-part ul {
-  list-style-type: none;
-  padding: 14%;
-  margin: 0;
-}
-
-.bottom-part li {
   margin: 10px;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 10px 8px 15px #888888;
+ ]]
 }
 
-.bottom-part li::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f1b0";
-  font-weight: 900;
-  padding-right: 5px;
+.pricing-card  h1 {
+    padding: 10%;
+    background: #b36b39;
+    color: #fff;
+    border-radius: 15px 15px 0 0;
 }
+
+.pricing-card a {
+    position: absolute;
+    bottom: 0;
+    left:0;
+   width: 100%;
+   padding: 25px;
+   border-radius: 0 0 15px 15px;
+   background: #46433e;
+   font-size: 150%;
+   }
+
+   .pricing-card p, span {
+       display: inline-block;
+   }
+
 
 .service-images--wrapper {
   margin-top: 100px;
@@ -1115,6 +1097,10 @@ input:last-child:hover {
      font-size: 175%;
  }
 
+ h2 {
+     font-size: 150%;
+ }
+
   .form-inline {
     display: inline-block !important;
   }
@@ -1207,6 +1193,10 @@ input:last-child:hover {
     margin-top: 15px;
   }
 
+.accredations-wrapper p:nth-child(1) {
+    width: 100%;
+}
+
   .padding-around {
     padding: 20px;
   }
@@ -1269,6 +1259,10 @@ input:last-child:hover {
     height: 45vh;
   }
 
+  .about-us-parallax h2 {
+      font-size: 200%;
+  }
+
   .service-content--wrapper p {
     font-size: 125%;
   }
@@ -1316,6 +1310,8 @@ input:last-child:hover {
     width: 100px;
 
 }
+
+
 
 }
 
