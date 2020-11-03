@@ -243,10 +243,6 @@ p {
   z-index: 10;
 }
 
-.navbar-brand img {
-  max-height: 125px;
-}
-
 .nav-link {
   color: #fff !important;
   position: relative;
@@ -906,7 +902,7 @@ input:last-child:hover {
 }
 
 .service-content--wrapper {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -959,7 +955,6 @@ input:last-child:hover {
   position: relative;
   border-radius: 15px;
   box-shadow: 10px 8px 15px #888888;
- ]]
 }
 
 .pricing-card  h1 {
@@ -974,15 +969,60 @@ input:last-child:hover {
     bottom: 0;
     left:0;
    width: 100%;
-   padding: 25px;
+   padding: 15px;
    border-radius: 0 0 15px 15px;
    background: #46433e;
    font-size: 150%;
+   transition: all .4s ease-in;   }
+
+   .pricing-card a:hover {
+       background: #807f3c;
    }
 
    .pricing-card p, span {
        display: inline-block;
    }
+
+.pricing-content {
+    text-align: center;
+    padding: 50px 0;
+    font-family: sans-serif;
+}
+
+.pricing-content span {
+    font-size: 25px;
+    position: relative;
+    bottom: 20px;
+}
+
+.pricing-content p {
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+
+.pricing-content hr {
+    width: 20px;
+    height: 3px;
+    background: #46433e;
+}
+
+
+.pricing-content ul {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.pricing-content li{
+    list-style: none;
+    padding: 5px;
+}
+.pricing-content li::before{
+    content: "\2713";
+    padding-right: 10px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
 
 
 .service-images--wrapper {
@@ -1007,7 +1047,6 @@ input:last-child:hover {
 
 .img-two {
   grid-area: img-two;
-]
 }
 
 .img-three {
@@ -1088,6 +1127,14 @@ input:last-child:hover {
 
   .flip-box-back p {
       padding: 5%;
+  }
+
+  .pricing-card {
+      height: 500px;
+  }
+
+  .pricing-content {
+      padding: 30px 0;
   }
 }
 
@@ -1288,10 +1335,6 @@ input:last-child:hover {
     padding: 10%;
   }
 
-  .pricing-card {
-      width: 280px;
-  }
-
    .service-images--wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -1309,6 +1352,15 @@ input:last-child:hover {
     bottom: 30px;
     width: 100px;
 
+}
+
+.pricing-content p {
+    font-size: 50px;
+
+}
+
+.pricing-card a {
+    font-size: 125%;
 }
 
 
@@ -1409,6 +1461,13 @@ input:last-child:hover {
 }
 
 @media only screen and (max-width: 992px) {
+
+
+
+.navbar-brand img {
+    position: relative;
+    bottom: 10px;
+}
 
 .header--part--two img {
     max-width: 120%;
