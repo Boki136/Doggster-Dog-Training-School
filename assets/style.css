@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
 /*--------------------CSS RESET-------------------*/
 
 html,
@@ -221,7 +222,7 @@ p {
 }
 
 .horizontal-rule--small {
-  width: 15%;
+  width: 5%;
   height: 2px;
   background: #fff;
   margin-left: 0;
@@ -248,7 +249,7 @@ p {
 .nav-link {
   color: #fff !important;
   position: relative;
-  font-size: 120%;
+  font-size: 110%;
 }
 
 .navbar-collapse {
@@ -325,17 +326,29 @@ p {
   background: #46433e;
   color: #fff;
   padding: 60px 80px;
-  font-size: 110%;
 }
 
 .footer-wrapper h2 {
   padding-bottom: 8px;
 }
 
-.footer-wrapper p {
-  font-size: 1.1em;
-padding: 5px;
+.footer-wrapper a {
+    color: #fff;
+    text-decoration: none;
+      transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  display: inline-block;
+  padding-bottom: 10px;
+}
 
+.footer-wrapper a:hover {
+    color: #b9794c;
+}
+
+.footer-wrapper p {
+    font-size: 100%;
 }
 
 .footer-wrapper i {
@@ -343,14 +356,13 @@ padding: 5px;
   padding-bottom: 10px;
 }
 
-.footer-wrapper a {
-  text-decoration: none;
+.service-footer--container a {
   color: #fff;
   padding-bottom: 10px;
   display: block;
 }
 
-.footer-wrapper a::after {
+.service-footer--container a::after {
     content: "\003E";
     padding-left: 10px;
     font-size: 25px;
@@ -358,21 +370,11 @@ padding: 5px;
     vertical-align: text-top;
 }
 
-
-/*--------------------COPYRIGHT SECTION-------------------*/
-
-.copyright-bar {
-  color: black;
-  height: 40px;
-  text-align: center;
-  background: #b36b39;
+.icons-wrapper a {
+    text-decoration: none;
+    color: #fff;
 }
 
-.copyright-bar p {
-  padding-top: 10px;
-  font-size: 100%;
-  color: #fff;
-}
 
 .icons-wrapper ul {
   width: 100%;
@@ -393,8 +395,25 @@ padding: 5px;
 }
 
 .icons-wrapper i:hover {
-  color: #807f3c;
+  color: #b36b39;
 }
+
+
+/*--------------------COPYRIGHT SECTION-------------------*/
+
+.copyright-bar {
+  color: black;
+  height: 40px;
+  text-align: center;
+  background: #807f3c;
+}
+
+.copyright-bar p {
+  padding-top: 10px;
+  font-size: 100%;
+  color: #fff;
+}
+
 
 /*------------------------------------------HOMEPAGE STYLING START------------------------*/
 
@@ -663,7 +682,7 @@ max-width: 100%;
 }
 
 .about-us-parallax h2 {
-  font-size: 250%;
+  font-size: 225%;
 }
 
 .about-us-parallax p {
@@ -697,6 +716,15 @@ background-position: top;
   background: #46433e;
   color: #fff;
   padding: 10%;
+  position: relative;
+}
+
+.about-content blockquote {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    font-size: 22px;
+    font-family: "Lobster Two", sans-serif;
 }
 
 .team-members--cards {
@@ -826,10 +854,10 @@ background-position: top;
   margin-top: 10%;
   padding-right: 4%;
   color: #46433e;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
+   transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
 }
 
 .contact-us--section i:hover {
@@ -1514,6 +1542,11 @@ input:last-child:hover {
     padding: 150px 15%;
   }
 
+  .about-content blockquote {
+      position: static;
+      margin-bottom: 10%;
+  }
+
   .service-content--wrapper {
     width: 90%;
     margin: 50px auto 0 auto;
@@ -1585,7 +1618,7 @@ input:last-child:hover {
   .parallax-one,
   .parallax-two,
   .parallax-three {
-    height: 70vh;
+    height: 60vh;
   }
 
   .our-story--section,
