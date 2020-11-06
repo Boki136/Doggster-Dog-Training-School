@@ -155,7 +155,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+span {
   font-family: "Grandstander", sans-serif;
   font-weight: 500;
   letter-spacing: 1px;
@@ -724,17 +725,30 @@ background-position: top;
 }
 
 .team-members--cards {
-  margin: 0 auto;
-  padding-top: 55px;
-  display: flex;
-  justify-content: space-evenly;
+margin: 0 auto;
+padding-top: 55px;
+text-align: center;
 }
 
+.team-members--cards .text-separator div {
+    background: #fafafa;
+    color: #46433e;
+    font-size: 150%;
+}
+
+.co-founders, .teaching-staff{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+
 .team-card {
-  width: fit-content;
-  color: #000;
-  position: relative;
+color: #46433e;
   margin: 25px;
+  width: 350px;
+  padding: 25px;
+  border: 1px solid #eee;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -746,25 +760,35 @@ background-position: top;
 }
 
 .team-card img {
-  height: 550px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5%;
 }
 
-.team-memeber--info button{
-    width: 100%;
-    font-size: 150%;
+.team-card h1 {
+    font-size: 200%;
+    color: #da7e3f;
 }
 
-
-.team-memeber--info .dropdown-menu {
-    background: transparent;
-    padding: 5%;
-    letter-spacing: normal;
-    color: #46433e;
-    border: 2px solid #b36b39 !important;
-    font-size: 90%;
-    
+.team-card h3, .team-card ul {
+    padding: 3% 0;
+    font-size: 15px;
 }
 
+.team-card ul:hover{
+    background-color: #eaeaea;
+}
+
+.team-card a {
+    text-decoration: none;
+    color: #da7e3f;
+}
+
+.team-card p {
+    font-size: 14px;
+    padding: 3% 0;
+}
 
 /*----------------------TESTIMONIALS CAROUSEL---------------*/
 .testimonials-section {
@@ -1135,13 +1159,6 @@ input:last-child:hover {
     width: 100%;
   }
 
-  .team-card img {
-    height: 400px;
-  }
-
-  .team-card h1 {
-    font-size: 120%;
-  }
 
   .testimonials-section > h1 {
     font-size: 175%;
@@ -1592,7 +1609,7 @@ input:last-child:hover {
     font-size: 1.25rem;
   }
 
-  .team-members--cards {
+  .co-founders, .teaching-staff {
     flex-wrap: wrap;
     justify-content: space-around;
 
