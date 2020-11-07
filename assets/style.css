@@ -210,7 +210,7 @@ p {
   color: #fff;
   border: 1px solid white;
   padding: 10.5px 35px;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 /*--------------------HORIZONTAL RULE-------------------*/
@@ -747,12 +747,6 @@ p {
   text-align: center;
 }
 
-.team-members--cards .text-separator div {
-  background: #fafafa;
-  color: #46433e;
-  font-size: 150%;
-}
-
 .co-founders,
 .teaching-staff {
   display: flex;
@@ -872,8 +866,9 @@ p {
   margin-bottom: 10%;
 }
 
-.contact-us--section h3 u {
-  color: #807f3c;
+.contact-us--section h3 a {
+  color: #b36b39;
+  text-decoration: underline;
 }
 
 .mobile-title--section {
@@ -983,6 +978,10 @@ input:last-child:hover {
   margin: 0 auto;
 }
 
+.service-content--wrapper li a {
+  color: #b36b39;
+}
+
 .service-content--wrapper p {
   font-size: 140%;
 }
@@ -1008,14 +1007,14 @@ input:last-child:hover {
   padding: 0 35px;
   line-height: 36px;
   top: -20px;
-  font-size: 125%;
-  color: #fff;
   font-weight: 700;
-  background-color: #46433e;
   border-radius: 2px;
   border: 1px solid transparent;
   display: inline-block;
   position: relative;
+  background: #fafafa;
+  color: #46433e;
+  font-size: 150%;
 }
 
 .pricing-cards {
@@ -1025,7 +1024,7 @@ input:last-child:hover {
 
 .pricing-card {
   width: 350px;
-  height: 550px;
+  height: auto;
   border: 1px solid #eaeaea;
   margin: 10px;
   position: relative;
@@ -1035,22 +1034,20 @@ input:last-child:hover {
 
 .pricing-card h1 {
   padding: 10%;
-  background: #b36b39;
+  background: #46433e;
   color: #fff;
   border-radius: 15px 15px 0 0;
 }
 
 .pricing-card a {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px;
-  border-radius: 0 0 15px 15px;
-  background: #46433e;
-  font-size: 150%;
-  transition: all 0.4s ease-in;
-}
+    width: 100%;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    background: #fafafa;
+    font-size: 150%;
+    transition: all 0.2s ease-in-out;
+    color: #5f5c57;
+     }
 
 .pricing-card a:hover {
   background: #807f3c;
@@ -1065,6 +1062,7 @@ span {
   text-align: center;
   padding: 50px 0;
   font-family: sans-serif;
+  background: linear-gradient(to left, #b9b8b5, #94b4bb);
 }
 
 .pricing-content span {
