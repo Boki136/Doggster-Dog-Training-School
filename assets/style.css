@@ -326,7 +326,7 @@ p {
 }
 
 .footer-wrapper h2 {
-  padding-bottom: 8px;
+ padding: 10px 0;
 }
 
 .footer-wrapper a {
@@ -978,9 +978,11 @@ input:last-child:hover {
   margin: 0 auto;
 }
 
-.service-content--wrapper li a {
+.service-content--wrapper p a, .service-content--wrapper li a {
   color: #b36b39;
+  font-weight: 700;
 }
+
 
 .service-content--wrapper p {
   font-size: 140%;
@@ -996,6 +998,8 @@ input:last-child:hover {
   padding: 3px 0;
   font-size: 110%;
 }
+
+
 
 .text-separator {
   border-top: 1px solid #eaeaea;
@@ -1024,12 +1028,17 @@ input:last-child:hover {
 
 .pricing-card {
   width: 350px;
-  height: auto;
+  height: fit-content;
   border: 1px solid #eaeaea;
   margin: 10px;
   position: relative;
   border-radius: 15px;
   box-shadow: 10px 8px 15px #888888;
+  transition: all .3 ease-in-out;
+}
+
+.pricing-card:hover {
+    transform: scale(1.03);
 }
 
 .pricing-card h1 {
@@ -1043,15 +1052,14 @@ input:last-child:hover {
     width: 100%;
     padding: 15px;
     border-radius: 0 0 15px 15px;
-    background: #fafafa;
+    background: #807f3c;
     font-size: 150%;
     transition: all 0.2s ease-in-out;
-    color: #5f5c57;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
      }
-
-.pricing-card a:hover {
-  background: #807f3c;
-}
 
 .pricing-card p,
 span {
@@ -1062,7 +1070,9 @@ span {
   text-align: center;
   padding: 50px 0;
   font-family: sans-serif;
-  background: linear-gradient(to left, #b9b8b5, #94b4bb);
+  background: #f1f1f1;
+    border-radius: 10px;
+   
 }
 
 .pricing-content span {
@@ -1074,28 +1084,28 @@ span {
 .pricing-content p {
   font-size: 60px;
   letter-spacing: 3px;
+   font-family: "Grandstander", sans-serif;
 }
 
 .pricing-content hr {
-  width: 20px;
-  height: 3px;
-  background: #46433e;
+  width: 80%;
+  background: #eaeaea;
 }
 
 .pricing-content ul {
-  text-align: center;
-  margin-top: 20%;
+  text-align: left;
+margin: 50px 0 70px 0;
+  padding-left: 10%;
+  
 }
 
 .pricing-content li {
   list-style: none;
-  padding: 5px;
-}
-.pricing-content li::before {
-  content: "\2713";
-  padding-right: 10px;
-  font-weight: 900;
-  font-size: 20px;
+  padding: 5px 10px 5px 35px;
+  line-height: 30px;
+  background: url("../assets/images/tick_icon.png") no-repeat left top 6px;
+  background-size: 25px;
+  
 }
 
 .service-images--wrapper {
@@ -1176,8 +1186,20 @@ span {
     width: 100%;
   }
 
+  .team-card {
+      width: 300px;
+  }
+
+  .team-card h1 {
+    font-size: 175%;
+  }
+
   .testimonials-section > h1 {
     font-size: 175%;
+  }
+
+  .testimonials-carousel {
+      height: 500px;
   }
 
   .testimonials-carousel img {
@@ -1217,6 +1239,11 @@ span {
 
   .pricing-content {
     padding: 30px 0;
+  }
+
+  .pricing-content li {
+      font-size: 100%;
+      font-weight: 500;
   }
 
   .copyright-bar p {
@@ -1463,6 +1490,7 @@ span {
 }
 
 @media only screen and (max-width: 695px) {
+
   .services-cta {
     margin-right: 0;
   }
@@ -1480,7 +1508,7 @@ span {
   }
 
   .address-section--mobile i {
-    display: none;
+
   }
 
   .mobile-title--section {
@@ -1491,6 +1519,12 @@ span {
     background: url("../assets/images/dog-paws-background.png") bottom;
     background-repeat-x: no-repeat;
   }
+}
+
+@media only screen and (min-width: 768px) {
+    .service-footer--container {
+        padding-left: 5%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1648,6 +1682,14 @@ span {
     justify-content: space-around;
   }
 }
+
+
+@media only screen and (max-width: 1230px) {
+    .pricing-card {
+        height: auto;}
+}
+
+
 @media only screen and (max-width: 1350px) {
   .service-images--wrapper {
     grid-template-columns: repeat(2, 1fr);
