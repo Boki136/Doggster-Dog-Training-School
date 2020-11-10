@@ -168,7 +168,7 @@ p {
 /*--------------------BUTTONS-------------------*/
 
 .button--primary {
-  background-color: #b36b39;
+  background-color: #a95c26;
   color: #fff;
   font-size: 18px;
   padding: 8px 30px;
@@ -190,10 +190,10 @@ p {
   background-color: #807f3c;
   color: #fff;
   font-size: 18px;
-  transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
   opacity: 0.9;
   padding: 5px 30px;
   box-shadow: 10px 8px 15px #888888;
@@ -208,7 +208,7 @@ p {
 .newsletter-btn {
   background: transparent;
   color: #fff;
-  border: 1px solid white;
+  border: 2px solid white;
   padding: 10.5px 35px;
   border-radius: 0.25rem;
 }
@@ -242,9 +242,14 @@ p {
   height: fit-content;
   padding: 0 16px;
   width: 100%;
-  background: #96abb0;
+  background: #828348;
   z-index: 20;
 }
+
+.navbar-light .navbar-toggler-icon {
+  background: url("../assets/images/hamburger-menu.png") no-repeat center;
+}
+
 
 .nav-link {
   color: #fff !important;
@@ -280,8 +285,13 @@ p {
 
 .form-inline a {
   box-shadow: none;
-  background: #807f3c;
+  background: transparent;
   padding: 5px 30px;
+  border: 2px solid #fff;
+}
+
+.form-inline a:hover {
+  background-color: #46433e;
 }
 
 .dropdown-menu.show {
@@ -294,12 +304,18 @@ p {
   color: #fff;
 }
 
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background: #a95c26;
+    color: #fff;
+}
+
 .hide--item--col--lg {
   display: none;
 }
 
 .navbar-light .navbar-toggler {
-  border-color: #fff;
+  border: 2px solid #fff;
 }
 
 .social-icons--mobile {
@@ -317,6 +333,36 @@ p {
   color: black;
 }
 
+.breadcrumb-item.active {
+  color: #46433e;
+}
+
+/*----------------------NEWSLETTER SECTION---------------*/
+.newsletter-wrapper {
+  text-align: center;
+  height: auto;
+  background-color: #a95c26;
+  padding: 4%;
+  margin-top: 100px;
+  color: #fff;
+}
+
+.newsletter-wrapper h1 {
+  font-size: 1.5em;
+  padding-bottom: 10px;
+}
+
+.newsletter-wrapper p {
+  padding-bottom: 15px;
+}
+
+.newsletter-wrapper input {
+  width: 50%;
+  height: 40px;
+  line-height: 42px;
+  border: 2px solid #fff;
+}
+
 /*----------------------FOOTER SECTION---------------*/
 
 .footer-wrapper {
@@ -326,7 +372,7 @@ p {
 }
 
 .footer-wrapper h2 {
- padding: 10px 0;
+  padding: 10px 0;
 }
 
 .footer-wrapper a {
@@ -391,7 +437,7 @@ p {
 }
 
 .icons-wrapper i:hover {
-  color: #b36b39;
+  color: #a95c26;
 }
 
 /*--------------------COPYRIGHT SECTION-------------------*/
@@ -467,7 +513,7 @@ p {
 }
 
 .service--box--two {
-  background: #807f3c;
+  background: #96abb0;
 }
 
 .services-cta {
@@ -638,31 +684,6 @@ p {
   display: none;
 }
 
-/*----------------------NEWSLETTER SECTION---------------*/
-.newsletter-wrapper {
-  text-align: center;
-  height: auto;
-  background-color: #b36b39;
-  padding: 4%;
-  margin-top: 100px;
-  color: #fff;
-}
-
-.newsletter-wrapper h1 {
-  font-size: 1.5em;
-  padding-bottom: 10px;
-}
-
-.newsletter-wrapper p {
-  padding-bottom: 15px;
-}
-
-.newsletter-wrapper input {
-  width: 50%;
-  height: 40px;
-  line-height: 42px;
-}
-
 /*--------------------------------------HOMEPAGE STYLING END-----------------------------*/
 
 /*--------------------------------------ABOUT US PAGE STYLING START-----------------------------*/
@@ -779,7 +800,7 @@ p {
 
 .team-card h1 {
   font-size: 200%;
-  color: #da7e3f;
+  color: #a95c26;
 }
 
 .team-card h3,
@@ -794,7 +815,7 @@ p {
 
 .team-card a {
   text-decoration: none;
-  color: #da7e3f;
+  color: #a95c26;
 }
 
 .team-card p {
@@ -867,7 +888,7 @@ p {
 }
 
 .contact-us--section h3 a {
-  color: #b36b39;
+  color: #a95c26;
   text-decoration: underline;
 }
 
@@ -895,7 +916,7 @@ p {
 }
 
 .contact-us--section i:hover {
-  color: #b36b39;
+  color: #a95c26;
 }
 
 .contact-title {
@@ -956,7 +977,7 @@ input:last-child {
 }
 
 input:last-child:hover {
-  background: #b36b39;
+  background: #a95c26;
 }
 
 /*--------------------------------------CONTACT US PAGE STYLING END-----------------------------*/
@@ -978,11 +999,11 @@ input:last-child:hover {
   margin: 0 auto;
 }
 
-.service-content--wrapper p a, .service-content--wrapper li a {
-  color: #b36b39;
+.service-content--wrapper p a,
+.service-content--wrapper li a {
+  color: #a95c26;
   font-weight: 700;
 }
-
 
 .service-content--wrapper p {
   font-size: 140%;
@@ -998,8 +1019,6 @@ input:last-child:hover {
   padding: 3px 0;
   font-size: 110%;
 }
-
-
 
 .text-separator {
   border-top: 1px solid #eaeaea;
@@ -1034,11 +1053,11 @@ input:last-child:hover {
   position: relative;
   border-radius: 15px;
   box-shadow: 10px 8px 15px #888888;
-  transition: all .3 ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 
 .pricing-card:hover {
-    transform: scale(1.03);
+  transform: scale(1.01);
 }
 
 .pricing-card h1 {
@@ -1049,17 +1068,17 @@ input:last-child:hover {
 }
 
 .pricing-card a {
-    width: 100%;
-    padding: 15px;
-    border-radius: 0 0 15px 15px;
-    background: #807f3c;
-    font-size: 150%;
-    transition: all 0.2s ease-in-out;
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-     }
+  width: 100%;
+  padding: 15px;
+  border-radius: 0 0 15px 15px;
+  background: #807f3c;
+  font-size: 150%;
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
 .pricing-card p,
 span {
@@ -1071,8 +1090,7 @@ span {
   padding: 50px 0;
   font-family: sans-serif;
   background: #f1f1f1;
-    border-radius: 10px;
-   
+  border-radius: 10px;
 }
 
 .pricing-content span {
@@ -1084,7 +1102,7 @@ span {
 .pricing-content p {
   font-size: 60px;
   letter-spacing: 3px;
-   font-family: "Grandstander", sans-serif;
+  font-family: "Grandstander", sans-serif;
 }
 
 .pricing-content hr {
@@ -1094,18 +1112,17 @@ span {
 
 .pricing-content ul {
   text-align: left;
-margin: 50px 0 70px 0;
+  margin: 50px 0 70px 0;
   padding-left: 10%;
-  
 }
 
 .pricing-content li {
   list-style: none;
   padding: 5px 10px 5px 35px;
   line-height: 30px;
-  background: url("../assets/images/tick_icon.png") no-repeat left top 6px;
+  background: url("../assets/images/tick-icon.png") no-repeat left top 6px;
   background-size: 25px;
-  
+  text-transform: capitalize;
 }
 
 .service-images--wrapper {
@@ -1187,7 +1204,7 @@ margin: 50px 0 70px 0;
   }
 
   .team-card {
-      width: 300px;
+    width: 300px;
   }
 
   .team-card h1 {
@@ -1199,7 +1216,7 @@ margin: 50px 0 70px 0;
   }
 
   .testimonials-carousel {
-      height: 500px;
+    height: 500px;
   }
 
   .testimonials-carousel img {
@@ -1242,8 +1259,8 @@ margin: 50px 0 70px 0;
   }
 
   .pricing-content li {
-      font-size: 100%;
-      font-weight: 500;
+    font-size: 100%;
+    font-weight: 500;
   }
 
   .copyright-bar p {
@@ -1490,7 +1507,6 @@ margin: 50px 0 70px 0;
 }
 
 @media only screen and (max-width: 695px) {
-
   .services-cta {
     margin-right: 0;
   }
@@ -1508,7 +1524,6 @@ margin: 50px 0 70px 0;
   }
 
   .address-section--mobile i {
-
   }
 
   .mobile-title--section {
@@ -1522,9 +1537,9 @@ margin: 50px 0 70px 0;
 }
 
 @media only screen and (min-width: 768px) {
-    .service-footer--container {
-        padding-left: 5%;
-    }
+  .service-footer--container {
+    padding-left: 5%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1683,12 +1698,11 @@ margin: 50px 0 70px 0;
   }
 }
 
-
 @media only screen and (max-width: 1230px) {
-    .pricing-card {
-        height: auto;}
+  .pricing-card {
+    height: auto;
+  }
 }
-
 
 @media only screen and (max-width: 1350px) {
   .service-images--wrapper {
