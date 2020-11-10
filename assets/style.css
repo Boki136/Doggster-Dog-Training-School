@@ -187,9 +187,9 @@ p {
 }
 
 .button--secondary {
-  background-color: #807f3c;
+  background-color: #757744;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
@@ -242,7 +242,7 @@ p {
   height: fit-content;
   padding: 0 16px;
   width: 100%;
-  background: #828348;
+  background: #757744;
   z-index: 20;
 }
 
@@ -387,7 +387,7 @@ p {
 }
 
 .footer-wrapper a:hover {
-  color: #b9794c;
+  color: #a95c26;
 }
 
 .footer-wrapper p {
@@ -446,13 +446,14 @@ p {
   color: black;
   height: 40px;
   text-align: center;
-  background: #807f3c;
+  background: #757744;
 }
 
 .copyright-bar p {
   padding-top: 10px;
   font-size: 100%;
   color: #fff;
+  font-weight: 600;
 }
 
 /*------------------------------------------HOMEPAGE STYLING START------------------------*/
@@ -936,6 +937,8 @@ p {
   display: none;
 }
 
+
+
 label {
   display: block;
 }
@@ -951,23 +954,19 @@ textarea {
 }
 
 legend {
-  padding: 0 0 2% 0;
+  padding: 2% 0;
   font-size: 125%;
 }
 
-legend:nth-child(even) {
-  padding-top: 2%;
-}
-
-input:nth-child(5),
-input:nth-child(7) {
+input:nth-child(8),
+input:nth-child(11) {
   width: 90%;
 }
 
 input:last-child {
   display: block;
   margin-top: 2%;
-  background: #96abb0;
+  background: #46433e;
   border: none;
   color: #fff;
   transition: all 0.3s ease-in-out;
@@ -978,6 +977,10 @@ input:last-child {
 
 input:last-child:hover {
   background: #a95c26;
+}
+
+.contact-us--section input:focus, .contact-us--section textarea:focus {
+    outline-color: #a95c26;
 }
 
 /*--------------------------------------CONTACT US PAGE STYLING END-----------------------------*/
@@ -1071,7 +1074,7 @@ input:last-child:hover {
   width: 100%;
   padding: 15px;
   border-radius: 0 0 15px 15px;
-  background: #807f3c;
+  background: #757744;
   font-size: 150%;
   transition: all 0.2s ease-in-out;
   color: #fff;

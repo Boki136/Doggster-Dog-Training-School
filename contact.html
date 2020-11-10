@@ -50,7 +50,7 @@
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
-              href="puppy-service.html"
+              href="#"
               id="navbarDropdown"
               role="button"
               data-toggle="dropdown"
@@ -171,9 +171,12 @@
         <div class="offset-lg-2 offset-md-1 col-lg-5 col-md-5 form-section">
           <form action="mailto:support@doggster.com" method="post">
             <legend class="title">Name *</legend>
-            <input type="text" name="fName" placeholder="First Name" required />
-            <input type="text" name="lName" placeholder="Last Name" required />
+            <label for="fName" class="sr-only">First Name</label>
+            <input type="text" name="fName" id="fName" placeholder="First Name" required />
+            <label for="lName" class="sr-only">Last Name</label>
+            <input type="text" name="lName" id="lName" placeholder="Last Name" required />
             <legend class="title">Email Address *</legend>
+            <label for="email" class="sr-only">Email Address</label>
             <input
               type="email"
               id="email"
@@ -182,6 +185,7 @@
               placeholder="john@gmail.com"
             />
             <legend class="title">Phone Number *</legend>
+            <label for="phone" class="sr-only">Phone Number</label>
             <input
               type="text"
               id="phone"
@@ -191,7 +195,8 @@
             />
             <legend class="title">Your Message</legend>
             <textarea name="message" rows="5"></textarea>
-            <input type="submit" value="SUBMIT" />
+            <label for="submit" class="sr-only">Submit Details</label>
+            <input type="submit" id="submit" value="SUBMIT" />
           </form>
         </div>
 
@@ -245,7 +250,7 @@
       <p>
         Stay up to date and never miss on new trainings and updates.
       </p>
-        <label for="_email"></label>
+       <label for="_email" class="sr-only">Email Address</label>
       <input type="email" name="email" id="_email" placeholder="Type your email" />
       <button class="newsletter-btn" type="submit">SUBMIT</button>
     </section>
