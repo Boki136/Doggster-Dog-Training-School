@@ -23,7 +23,7 @@
       crossorigin="anonymous"
     ></script>
     <!--External Stylesheet-->
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
@@ -102,7 +102,6 @@
             href="https://calendly.com/doggster/"
             target="_blank"
             class="btn button--secondary my-3 my-sm-0"
-            type="submit"
             >Book A Slot</a
           >
         </form>
@@ -267,7 +266,7 @@
         <h1>Why Choose Us?</h1>
         <hr class="horizontal-rule bottom-space-lg" />
 
-        <div clas="row">
+        <div class="row">
           <p>
             Sometimes it's tough to understand why your dog is behaving the way
             they are, and we often blame them not even knowing that the problem
@@ -346,7 +345,10 @@
             <div class="flip-box">
               <div class="flip-box-inner">
                 <div class="flip-box-front">
-                  <img src="assets/images/dog-sitting.png" alt="dog sitting icon" />
+                  <img
+                    src="assets/images/dog-sitting.png"
+                    alt="dog sitting icon"
+                  />
                   <h2>We Have Trained Over 3500 Dogs</h2>
                 </div>
                 <div class="flip-box-back">
@@ -518,8 +520,8 @@
       <p>
         Stay up to date and never miss on new trainings and updates.
       </p>
-        <label for="_email" class="sr-only">Email Address</label>
-      <input type="email" name="email" placeholder="Type your email" />
+      <label for="email" class="sr-only">Email Address</label>
+      <input type="email" name="email" id="email" placeholder="Type your email" />
       <button class="newsletter-btn" type="submit">SUBMIT</button>
     </section>
 
@@ -541,7 +543,7 @@
           <p>
             <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span
             >56 Goldbrook Sq Blancharstown,
-            <br>
+            <br />
             Dublin 15 W27 AY54, Ireland
           </p>
         </div>
@@ -579,9 +581,15 @@
       </div>
       <div class="row icons-wrapper">
         <ul>
-         <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>
-          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
-          <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
+        <li><a href="https://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook fa-2x" aria-hidden="true"></i
+          ></a></li>
+          <li>  <a href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram fa-2x" aria-hidden="true"></i
+          ></a></li>
+        <li> <a href="https://www.twitter.com" target="_blank"
+            ><i class="fab fa-twitter fa-2x" aria-hidden="true"></i
+          ></a></li>
         </ul>
       </div>
     </footer>

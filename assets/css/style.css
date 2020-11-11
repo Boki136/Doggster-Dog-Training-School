@@ -704,7 +704,7 @@ p {
 }
 
 .parallax-one {
-  background: url("../assets/images/our-story-parallax.png") no-repeat fixed
+  background: url("/assets/images/our-story-parallax.png") no-repeat fixed
     center;
   background-size: cover;
   background-position: top;
@@ -712,14 +712,14 @@ p {
 }
 
 .parallax-two {
-  background: url("../assets/images/our-mission-parallax.png") no-repeat fixed
+  background: url("/assets/images/our-mission-parallax.png") no-repeat fixed
     center;
   background-size: cover;
   height: 57vh;
 }
 
 .parallax-three {
-  background: url("../assets/images/our-team-parallax.png") no-repeat fixed
+  background: url("/assets/images/our-team-parallax.png") no-repeat fixed
     center;
   background-size: cover;
   height: 57vh;
@@ -938,7 +938,6 @@ p {
 }
 
 
-
 label {
   display: block;
 }
@@ -953,13 +952,13 @@ textarea {
   max-height: 300px;
 }
 
-legend {
+.form-section .title{
   padding: 2% 0;
   font-size: 125%;
 }
 
 input:nth-child(8),
-input:nth-child(11) {
+input:nth-child(6) {
   width: 90%;
 }
 
@@ -981,6 +980,11 @@ input:last-child:hover {
 
 .contact-us--section input:focus, .contact-us--section textarea:focus {
     outline-color: #a95c26;
+}
+
+.google-maps {
+    width: 100%; 
+    margin-top: 50px;
 }
 
 /*--------------------------------------CONTACT US PAGE STYLING END-----------------------------*/
@@ -1056,7 +1060,7 @@ input:last-child:hover {
   position: relative;
   border-radius: 15px;
   box-shadow: 10px 8px 15px #888888;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .pricing-card:hover {
