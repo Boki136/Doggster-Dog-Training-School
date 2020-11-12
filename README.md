@@ -68,7 +68,7 @@ Fonts are paired nicely. All the titles are in Grandtsader & body text is in Lat
 
 ## **Features**
 
-All "Book A Slot" CTA'sare linking out to 3rd party app called Calendly. Users can easily check wihich times are available for the training 
+All "Book A Slot" CTA's are linking out to 3rd party app called Calendly. Users can easily check which times are available for the training 
 and make a booking that way rather than calling in.
 
 The website consist of seven pages:
