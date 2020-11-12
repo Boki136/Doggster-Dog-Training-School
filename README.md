@@ -68,6 +68,9 @@ Fonts are paired nicely. All the titles are in Grandtsader & body text is in Lat
 
 ## **Features**
 
+All "Book A Slot" CTA'sare linking out to 3rd party app called Calendly. Users can easily check wihich times are available for the training 
+and make a booking that way rather than calling in.
+
 The website consist of seven pages:
 
 - Homepage 
@@ -164,7 +167,7 @@ User can fill in the contact form, call or Email Us. Google map is helping the u
 - Bootstrap Documentation - used for code snippets and support
 - Stack Overflow - General resource for code and problem solving
 - W3 School - General resource for code and problem solving
-- Grammarly for spellcheck
+- Grammarly - for spellcheck
 
 
 
