@@ -1535,15 +1535,12 @@ span {
     margin-top: 50px;
   }
 
-  .address-section--mobile i {
-  }
-
   .mobile-title--section {
     display: block;
   }
 
   .flip-box-container {
-    background: url("../assets/images/dog-paws-background.png") bottom;
+    background: url("/assets/images/dog-paws-background.png") bottom;
     background-repeat-x: no-repeat;
   }
 }
