@@ -4,6 +4,10 @@
 Welcome to Doggster! We are excited to be guiding you and your best friend in forming a special bond nurtured with love and respect. Every pooch is a part of our evergrowing family, and we always give 100% commitment to their training and exercise. Our primary focus is to understand your dog before we start with any training, and we believe every dog can 
 learn to behave in the right way and listen to their owners.
 
+![](/assets/images/responsive-img.png)
+
+
+
 
 ### **Table of Contents**
 
