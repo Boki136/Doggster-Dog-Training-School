@@ -247,7 +247,7 @@ p {
 }
 
 .navbar-light .navbar-toggler-icon {
-  background: url("../assets/images/hamburger-menu.png") no-repeat center;
+  background: url("/assets/images/hamburger-menu.png") no-repeat center;
 }
 
 
@@ -572,7 +572,7 @@ p {
 /*--------------------WHY CHOOSE US SECTION-------------------*/
 
 .accredations-wrapper {
-  background: url("../assets/images/dog-paws-background.png") repeat-x bottom;
+  background: url("/assets/images/dog-paws-background.png") repeat-x bottom;
   height: 950px;
 }
 
@@ -885,7 +885,7 @@ p {
 
 .contact-us--section h3 {
   font-size: 125%;
-  margin-bottom: 10%;
+  margin-bottom: 2%;
 }
 
 .contact-us--section h3 a {
@@ -900,6 +900,10 @@ p {
 .address-section hr {
   background: #000;
   width: 25%;
+}
+
+.address-section h2 {
+    margin-top: 40px;
 }
 
 .address-section--mobile {
@@ -1020,6 +1024,7 @@ input:last-child:hover {
   text-align: left;
   margin-top: 75px;
   list-style: circle;
+  line-height: 20px;
 }
 
 .service-content--wrapper li {
@@ -1127,7 +1132,7 @@ span {
   list-style: none;
   padding: 5px 10px 5px 35px;
   line-height: 30px;
-  background: url("../assets/images/tick-icon.png") no-repeat left top 6px;
+  background: url("/assets/images/tick-icon.png") no-repeat left top 6px;
   background-size: 25px;
   text-transform: capitalize;
 }
