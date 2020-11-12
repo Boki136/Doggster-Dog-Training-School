@@ -14,6 +14,7 @@ learn to behave in the right way and listen to their owners.
 - Research & Design Phase
 - UX Documents
 - Features
+- Technologies Used & Resources
 
 
 ## **UX**
@@ -76,6 +77,10 @@ Website consist seven pages:
 - Puppy Day School
 - Adult Agility Traning
 - Adult Day School
+- Testing
+- Issues I couldn't overcome
+- Acknowledgments 
+
 
 <ins>**Navigation**</ins>
 
