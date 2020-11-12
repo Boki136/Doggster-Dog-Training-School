@@ -247,7 +247,7 @@ p {
 }
 
 .navbar-light .navbar-toggler-icon {
-  background: url("/assets/images/hamburger-menu.png") no-repeat center;
+  background: url("../images/hamburger-menu.png") no-repeat center;
 }
 
 
@@ -572,7 +572,7 @@ p {
 /*--------------------WHY CHOOSE US SECTION-------------------*/
 
 .accredations-wrapper {
-  background: url("/assets/images/dog-paws-background.png") repeat-x bottom;
+  background: url("../images/dog-paws-background.png") repeat-x bottom;
   height: 950px;
 }
 
@@ -704,7 +704,7 @@ p {
 }
 
 .parallax-one {
-  background: url("/assets/images/our-story-parallax.png") no-repeat fixed
+  background: url("../images/our-story-parallax.png") no-repeat fixed
     center;
   background-size: cover;
   background-position: top;
@@ -712,14 +712,14 @@ p {
 }
 
 .parallax-two {
-  background: url("/assets/images/our-mission-parallax.png") no-repeat fixed
+  background: url("../images/our-mission-parallax.png") no-repeat fixed
     center;
   background-size: cover;
   height: 57vh;
 }
 
 .parallax-three {
-  background: url("/assets/images/our-team-parallax.png") no-repeat fixed
+  background: url("../images/our-team-parallax.png") no-repeat fixed
     center;
   background-size: cover;
   height: 57vh;
@@ -1132,7 +1132,7 @@ span {
   list-style: none;
   padding: 5px 10px 5px 35px;
   line-height: 30px;
-  background: url("/assets/images/tick-icon.png") no-repeat left top 6px;
+  background: url("../images/tick-icon.png") no-repeat left top 6px;
   background-size: 25px;
   text-transform: capitalize;
 }
@@ -1540,7 +1540,7 @@ span {
   }
 
   .flip-box-container {
-    background: url("/assets/images/dog-paws-background.png") bottom;
+    background: url("../images/dog-paws-background.png") bottom;
     background-repeat-x: no-repeat;
   }
 }
